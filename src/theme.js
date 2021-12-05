@@ -48,5 +48,31 @@ export const theme = createTheme({
         },
       },
     },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          width: '80%',
+          maxWidth: '60rem',
+          '& > div': {
+            width: '100%',
+          },
+          [breakpoints.up(desktopBreakpoint)]: {
+            height: '20rem',
+          },
+          [breakpoints.between(tabletBreakpoint, desktopBreakpoint)]: {
+            height: '15rem',
+          },
+          [breakpoints.down(tabletBreakpoint)]: {
+            height: 'fit',
+            '& .MuiCard-root': {
+              flexDirection: 'column',
+            },
+            '& .MuiTypography-root': {
+              marginBottom: '1rem',
+            },
+          },
+        },
+      },
+    },
   },
 });

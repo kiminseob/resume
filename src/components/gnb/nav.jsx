@@ -15,9 +15,9 @@ const tabsStyle = () => ({
 
 const tabStyle = () => ({
   textTransform: 'none',
-  color: customTheme.navTxtSelectedColor,
+  color: customTheme.navTxtColor,
   '&.Mui-selected': {
-    color: customTheme.navTxtColor,
+    color: customTheme.navTxtSelectedColor,
   },
 });
 
@@ -54,7 +54,9 @@ function Nav() {
       <Tabs
         value={value}
         onChange={handleChange}
-        TabIndicatorProps={{ sx: { background: customTheme.navTxtColor } }}
+        TabIndicatorProps={{
+          sx: { background: customTheme.navTxtSelectedColor },
+        }}
         sx={tabsStyle}
       >
         <LinkTab label={home} href="/home" />
