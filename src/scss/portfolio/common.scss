@@ -1,3 +1,12 @@
+body {
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  overflow: auto;
+}
+
 ul {
   list-style-type: none;
   margin: 0;

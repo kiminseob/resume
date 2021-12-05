@@ -15,6 +15,7 @@ const tabsStyle = () => ({
 
 const tabStyle = () => ({
   textTransform: 'none',
+  color: customTheme.navTxtSelectedColor,
   '&.Mui-selected': {
     color: customTheme.navTxtColor,
   },

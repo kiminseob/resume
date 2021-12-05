@@ -8,6 +8,7 @@ $desktop-breakpoint: 1024px;
 
 $nav-background-color: #444444;
 $nav-txt-color: #b1b1b1;
+$nav-txt-selected-color: #b1b1b1;
 
 $portfolio-background-color: antiquewhite;
 $portfolio-txt-color: #0a0708;
@@ -22,4 +23,5 @@ $portfolio-txt-color: #0a0708;
   desktopBreakpoint: $desktop-breakpoint;
 
   navTxtColor: $nav-txt-color;
+  navTxtSelectedColor: $nav-txt-selected-color;
 }
