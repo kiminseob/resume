@@ -1,0 +1,23 @@
+$font-large: 1.5rem;
+$font-medium: 1.2rem;
+$font-small: 1rem;
+
+$mobile-breakpoint: 335px;
+$tablet-breakpoint: 758px;
+$desktop-breakpoint: 1024px;
+
+$nav-background-color: #444444;
+$nav-txt-color: #b1b1b1;
+
+$portfolio-background-color: antiquewhite;
+$portfolio-txt-color: #0a0708;
+
+:export {
+  fontLarge: $font-large;
+  fontMedium: $font-medium;
+  fontSmall: $font-small;
+
+  mobileBreakpoint: $mobile-breakpoint;
+  tabletBreakpoint: $tablet-breakpoint;
+  desktopBreakpoint: $desktop-breakpoint;
+}

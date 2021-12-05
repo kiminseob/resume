@@ -1,33 +1,25 @@
-@import '../variable';
+@import '../variable.module';
 @import '../mixin';
 
 nav {
-  margin: 1rem 0;
-  background-color: aqua;
-
-  ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-  }
+  padding: 1rem 0;
+  background-color: $nav-background-color;
 }
 
-@include desktop {
-  nav li {
-    font-size: $font-large;
-  }
-}
+// @include desktop {
+//   nav a {
+//     font-size: $font-large;
+//   }
+// }
 
-@include tablet {
-  nav li {
-    font-size: $font-medium;
-  }
-}
+// @include tablet {
+//   nav a {
+//     font-size: $font-medium;
+//   }
+// }
 
-@include mobile {
-  nav li {
-    font-size: $font-small;
-  }
-}
+// @include mobile {
+//   nav a {
+//     font-size: $font-small;
+//   }
+// }

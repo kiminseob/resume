@@ -1,12 +1,12 @@
 import React from 'react';
 import { Nav } from 'components';
-import Contents from './contents';
+import Main from './Main';
 
 function Portfolio() {
   return (
     <div className="portfolio">
       <Nav />
-      <Contents />
+      <Main />
     </div>
   );
 }

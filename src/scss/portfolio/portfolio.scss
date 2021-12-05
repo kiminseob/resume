@@ -1,4 +1,10 @@
+@import '../variable.module';
+
 .portfolio {
-  background-color: antiquewhite;
-  width: 100%;
+  min-width: $mobile-breakpoint;
+  background-color: $portfolio-background-color;
+  width: 100vw;
+  height: 100vh;
+  color: $portfolio-txt-color;
+  overflow: auto;
 }
