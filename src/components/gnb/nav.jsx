@@ -49,7 +49,7 @@ function Nav() {
   return (
     <nav>
       <div className="profile">
-        <Profile />
+        <Profile setValue={setValue} />
       </div>
       <Tabs
         value={value}

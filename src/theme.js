@@ -32,6 +32,7 @@ export const theme = createTheme({
     MuiAvatar: {
       styleOverrides: {
         root: {
+          cursor: 'pointer',
           [breakpoints.up(desktopBreakpoint)]: {
             width: '80px',
             height: '80px',
