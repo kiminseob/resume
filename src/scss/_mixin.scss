@@ -1,7 +1,7 @@
 @import './variable.module';
 
 @mixin mobile {
-  @media (min-width: #{$mobile-breakpoint}) and (max-width: #{$tablet-breakpoint - 1px}) {
+  @media (max-width: #{$tablet-breakpoint - 1px}) {
     @content;
   }
 }

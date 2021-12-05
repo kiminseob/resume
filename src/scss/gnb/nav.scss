@@ -2,24 +2,8 @@
 @import '../mixin';
 
 nav {
+  display: flex;
+  align-items: center;
   padding: 1rem 0;
   background-color: $nav-background-color;
 }
-
-// @include desktop {
-//   nav a {
-//     font-size: $font-large;
-//   }
-// }
-
-// @include tablet {
-//   nav a {
-//     font-size: $font-medium;
-//   }
-// }
-
-// @include mobile {
-//   nav a {
-//     font-size: $font-small;
-//   }
-// }

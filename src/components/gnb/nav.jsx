@@ -3,21 +3,21 @@ import { nav } from 'messages';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useNavigate } from 'react-router';
+import customTheme from 'scss/variable.module.scss';
+import Profile from './Profile';
 
-const tabsStyle = (theme) => ({
+const tabsStyle = () => ({
+  width: '100%',
   '.MuiTabs-flexContainer': {
     justifyContent: 'space-evenly',
   },
 });
 
-const tabStyle = (theme) => ({
+const tabStyle = () => ({
   textTransform: 'none',
   '&.Mui-selected': {
-    color: '#B1B1B1',
+    color: customTheme.navTxtColor,
   },
-  // [theme.breakpoints.down(d.fontSmall)]: {
-  //   fontSize: '1px',
-  // },
 });
 
 function LinkTab(props) {
@@ -47,10 +47,13 @@ function Nav() {
 
   return (
     <nav>
+      <div className="profile">
+        <Profile />
+      </div>
       <Tabs
         value={value}
         onChange={handleChange}
-        TabIndicatorProps={{ sx: { background: '#B1B1B1' } }}
+        TabIndicatorProps={{ sx: { background: customTheme.navTxtColor } }}
         sx={tabsStyle}
       >
         <LinkTab label={home} href="/home" />

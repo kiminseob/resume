@@ -15,14 +15,34 @@ export const theme = createTheme({
     MuiTab: {
       styleOverrides: {
         root: {
+          minWidth: '50px',
           [breakpoints.up(desktopBreakpoint)]: {
             fontSize: fontLarge,
           },
-          [breakpoints.between(tabletBreakpoint, desktopBreakpoint - 1)]: {
+          [breakpoints.between(tabletBreakpoint, desktopBreakpoint)]: {
             fontSize: fontMedium,
           },
-          [breakpoints.between(mobileBreakpoint, tabletBreakpoint - 1)]: {
+          [breakpoints.down(tabletBreakpoint)]: {
             fontSize: fontSmall,
+            padding: 0,
+          },
+        },
+      },
+    },
+    MuiAvatar: {
+      styleOverrides: {
+        root: {
+          [breakpoints.up(desktopBreakpoint)]: {
+            width: '80px',
+            height: '80px',
+          },
+          [breakpoints.between(tabletBreakpoint, desktopBreakpoint)]: {
+            width: '50px',
+            height: '50px',
+          },
+          [breakpoints.down(tabletBreakpoint)]: {
+            width: '35px',
+            height: '35px',
           },
         },
       },

@@ -1,6 +1,6 @@
 $font-large: 1.5rem;
 $font-medium: 1.2rem;
-$font-small: 1rem;
+$font-small: 0.9rem;
 
 $mobile-breakpoint: 335px;
 $tablet-breakpoint: 758px;
@@ -20,4 +20,6 @@ $portfolio-txt-color: #0a0708;
   mobileBreakpoint: $mobile-breakpoint;
   tabletBreakpoint: $tablet-breakpoint;
   desktopBreakpoint: $desktop-breakpoint;
+
+  navTxtColor: $nav-txt-color;
 }
