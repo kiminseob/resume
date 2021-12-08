@@ -3,33 +3,40 @@ import { createBreakpoints } from '@mui/system';
 import customTheme from 'scss/variable.module.scss';
 import _ from 'lodash';
 
-const breakpoints = createBreakpoints({});
-const { fontLarge, fontMedium, fontSmall } = customTheme;
-const { mobileBreakpoint, tabletBreakpoint, desktopBreakpoint } = _.mapValues(
-  customTheme,
-  (v) => parseInt(v.replaceAll(/\D/g, ''), 10)
-);
+const { fontXLarge, fontLarge, fontMedium, fontSmall } = customTheme;
+const {
+  mobileBreakpoint,
+  laptopBreakpoint,
+  tabletBreakpoint,
+  desktopBreakpoint,
+} = _.mapValues(customTheme, (v) => parseInt(v.replaceAll(/\D/g, ''), 10));
+const breakpoints = createBreakpoints({
+  values: {
+    mobile: mobileBreakpoint,
+    tablet: tabletBreakpoint,
+    laptop: laptopBreakpoint,
+    desktop: desktopBreakpoint,
+  },
+  unit: 'rem',
+});
 
 export const theme = createTheme({
-  breakpoints: {
-    values: {
-      mobile: mobileBreakpoint,
-      tablet: tabletBreakpoint,
-      desktop: desktopBreakpoint,
-    },
-  },
+  breakpoints,
   components: {
     MuiTab: {
       styleOverrides: {
         root: {
-          minWidth: '50px',
+          minWidth: '3.125rem',
           [breakpoints.up(desktopBreakpoint)]: {
+            fontSize: fontXLarge,
+          },
+          [breakpoints.between(laptopBreakpoint, desktopBreakpoint)]: {
             fontSize: fontLarge,
           },
-          [breakpoints.between(tabletBreakpoint, desktopBreakpoint)]: {
+          [breakpoints.between(tabletBreakpoint, laptopBreakpoint)]: {
             fontSize: fontMedium,
           },
-          [breakpoints.down(tabletBreakpoint)]: {
+          [breakpoints.between(mobileBreakpoint, tabletBreakpoint)]: {
             fontSize: fontSmall,
             padding: 0,
           },
@@ -41,16 +48,20 @@ export const theme = createTheme({
         root: {
           cursor: 'pointer',
           [breakpoints.up(desktopBreakpoint)]: {
-            width: '80px',
-            height: '80px',
+            width: '5rem', // 80px
+            height: '5rem',
           },
-          [breakpoints.between(tabletBreakpoint, desktopBreakpoint)]: {
-            width: '50px',
-            height: '50px',
+          [breakpoints.between(laptopBreakpoint, desktopBreakpoint)]: {
+            width: '4.0625rem', // 65px
+            height: '4.0625rem',
           },
-          [breakpoints.down(tabletBreakpoint)]: {
-            width: '35px',
-            height: '35px',
+          [breakpoints.between(tabletBreakpoint, laptopBreakpoint)]: {
+            width: '3.125rem', // 50px
+            height: '3.125rem',
+          },
+          [breakpoints.between(mobileBreakpoint, tabletBreakpoint)]: {
+            width: '2.1875rem', // 35px
+            height: '2.1875rem',
           },
         },
       },

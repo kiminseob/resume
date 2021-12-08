@@ -1,10 +1,12 @@
-$font-large: 1.5rem;
-$font-medium: 1.2rem;
-$font-small: 0.9rem;
+$font-xlarge: 1.5rem; // 24px
+$font-large: 1.125rem; // 18px
+$font-medium: 1rem; // 16px
+$font-small: 0.8rem; // 13px
 
-$mobile-breakpoint: 335px;
-$tablet-breakpoint: 758px;
-$desktop-breakpoint: 1024px;
+$mobile-breakpoint: 0rem;
+$tablet-breakpoint: 40rem; // 640px
+$laptop-breakpoint: 64rem; // 1024px
+$desktop-breakpoint: 75rem; // 1200px
 
 $nav-background-color: #444444;
 $nav-txt-color: #b1b1b1;
@@ -14,12 +16,14 @@ $portfolio-background-color: antiquewhite;
 $portfolio-txt-color: #0a0708;
 
 :export {
+  fontXLarge: $font-xlarge;
   fontLarge: $font-large;
   fontMedium: $font-medium;
   fontSmall: $font-small;
 
   mobileBreakpoint: $mobile-breakpoint;
   tabletBreakpoint: $tablet-breakpoint;
+  laptopBreakpoint: $laptop-breakpoint;
   desktopBreakpoint: $desktop-breakpoint;
 
   navTxtColor: $nav-txt-color;

@@ -18,12 +18,27 @@ const muiPaperStyle = (theme) => ({
     },
     [theme.breakpoints.up('desktop')]: {
       height: '20rem',
+      '& .MuiCardContent-root': {
+        height: '85%',
+      },
     },
-    [theme.breakpoints.between('tablet', 'desktop')]: {
-      height: '15rem',
+    [theme.breakpoints.between('laptop', 'desktop')]: {
+      height: '17rem',
+      '& .MuiCardContent-root': {
+        height: '85%',
+      },
     },
-    [theme.breakpoints.down('tablet')]: {
+    [theme.breakpoints.between('tablet', 'laptop')]: {
+      height: '14rem',
+      '& .MuiCardContent-root': {
+        height: '70%',
+      },
+    },
+    [theme.breakpoints.between('mobile', 'tablet')]: {
       height: 'fit',
+      '& .MuiCardContent-root': {
+        height: '90%',
+      },
       '& .MuiCard-root': {
         flexDirection: 'column',
       },
@@ -60,19 +75,36 @@ function ContentsCard() {
               width: '100%',
               height: '100%',
               display: 'flex',
+              position: 'relative',
             }}
           >
             <CardMedia
               component="img"
               image="/images/todolist.png"
-              alt="green iguana"
-              sx={{ width: 'unset' }}
+              alt="todolist"
+              sx={{ objectFit: 'contain', width: 'unset' }}
             />
-            <CardContent sx={{ position: 'relative' }}>
-              <Typography gutterBottom variant="h5" component="div">
+            <CardContent
+              sx={{
+                '&:last-child': { paddingBottom: '2.875rem' }, // 46px
+              }}
+            >
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="div"
+                sx={{
+                  overflow: 'hidden',
+                  textOverflow: 'clip',
+                }}
+              >
                 Practice : Todo List
               </Typography>
-              <Typography variant="subtitle1" color="text.secondary">
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                sx={{ overflowY: 'auto', height: '100%' }}
+              >
                 This is a simple to-do list website developed after learning
                 react and mobx for the first time. It has the ability to add,
                 remove, and filter to-do lists. Save the data of the todo list
@@ -80,9 +112,8 @@ function ContentsCard() {
               </Typography>
               <CardActions
                 sx={{
-                  justifyContent: 'flex-end',
-                  bottom: 0,
                   position: 'absolute',
+                  bottom: 0,
                   right: 0,
                 }}
               >

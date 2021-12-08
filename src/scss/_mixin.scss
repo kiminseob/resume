@@ -1,13 +1,21 @@
 @import './variable.module';
 
+// 1rem == 16px
+// 0.0625rem == 1px
 @mixin mobile {
-  @media (max-width: #{$tablet-breakpoint - 1px}) {
+  @media (min-width: #{$mobile-breakpoint}) and (max-width: #{$tablet-breakpoint - 0.0625rem}) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: #{$tablet-breakpoint}) and (max-width: #{$desktop-breakpoint - 1px}) {
+  @media (min-width: #{$tablet-breakpoint}) and (max-width: #{$laptop-breakpoint - 0.0625rem}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop-breakpoint}) and (max-width: #{$desktop-breakpoint - 0.0625rem}) {
     @content;
   }
 }
