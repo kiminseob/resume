@@ -7,10 +7,17 @@ const breakpoints = createBreakpoints({});
 const { fontLarge, fontMedium, fontSmall } = customTheme;
 const { mobileBreakpoint, tabletBreakpoint, desktopBreakpoint } = _.mapValues(
   customTheme,
-  (v) => v.replaceAll(/\D/g, '')
+  (v) => parseInt(v.replaceAll(/\D/g, ''), 10)
 );
 
 export const theme = createTheme({
+  breakpoints: {
+    values: {
+      mobile: mobileBreakpoint,
+      tablet: tabletBreakpoint,
+      desktop: desktopBreakpoint,
+    },
+  },
   components: {
     MuiTab: {
       styleOverrides: {
@@ -44,32 +51,6 @@ export const theme = createTheme({
           [breakpoints.down(tabletBreakpoint)]: {
             width: '35px',
             height: '35px',
-          },
-        },
-      },
-    },
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          width: '80%',
-          maxWidth: '60rem',
-          '& > div': {
-            width: '100%',
-          },
-          [breakpoints.up(desktopBreakpoint)]: {
-            height: '20rem',
-          },
-          [breakpoints.between(tabletBreakpoint, desktopBreakpoint)]: {
-            height: '15rem',
-          },
-          [breakpoints.down(tabletBreakpoint)]: {
-            height: 'fit',
-            '& .MuiCard-root': {
-              flexDirection: 'column',
-            },
-            '& .MuiTypography-root': {
-              marginBottom: '1rem',
-            },
           },
         },
       },
