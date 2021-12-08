@@ -12,7 +12,9 @@ function Profile(props) {
   };
 
   return (
-    <Avatar alt="inseop" src="/images/profile.jpeg" onClick={handleClick} />
+    <div className="profile">
+      <Avatar alt="inseop" src="/images/profile.jpeg" onClick={handleClick} />
+    </div>
   );
 }
 

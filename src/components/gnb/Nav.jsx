@@ -48,9 +48,7 @@ function Nav() {
 
   return (
     <nav>
-      <div className="profile">
-        <Profile setValue={setValue} />
-      </div>
+      <Profile setValue={setValue} />
       <Tabs
         value={value}
         onChange={handleChange}
