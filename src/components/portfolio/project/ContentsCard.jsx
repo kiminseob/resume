@@ -18,27 +18,16 @@ const muiPaperStyle = (theme) => ({
     },
     [theme.breakpoints.up('desktop')]: {
       height: '20rem',
-      '& .MuiCardContent-root': {
-        height: '85%',
-      },
     },
     [theme.breakpoints.between('laptop', 'desktop')]: {
       height: '17rem',
-      '& .MuiCardContent-root': {
-        height: '85%',
-      },
     },
     [theme.breakpoints.between('tablet', 'laptop')]: {
       height: '14rem',
-      '& .MuiCardContent-root': {
-        height: '70%',
-      },
     },
     [theme.breakpoints.between('mobile', 'tablet')]: {
       height: 'fit',
-      '& .MuiCardContent-root': {
-        height: '90%',
-      },
+
       '& .MuiCard-root': {
         flexDirection: 'column',
       },
@@ -72,10 +61,10 @@ function ContentsCard() {
         <Paper elevation={5} sx={muiPaperStyle}>
           <Card
             sx={{
-              width: '100%',
               height: '100%',
               display: 'flex',
               position: 'relative',
+              justifyContent: 'center',
             }}
           >
             <CardMedia
@@ -89,21 +78,19 @@ function ContentsCard() {
                 '&:last-child': { paddingBottom: '2.875rem' }, // 46px
               }}
             >
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                sx={{
-                  overflow: 'hidden',
-                  textOverflow: 'clip',
-                }}
-              >
+              <Typography gutterBottom variant="h5" component="div">
                 Practice : Todo List
               </Typography>
               <Typography
                 variant="subtitle1"
                 color="text.secondary"
-                sx={{ overflowY: 'auto', height: '100%' }}
+                sx={{
+                  display: '-webkit-box',
+                  '-webkit-box-orient': 'vertical',
+                  '-webkit-line-clamp': '4',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                }}
               >
                 This is a simple to-do list website developed after learning
                 react and mobx for the first time. It has the ability to add,
