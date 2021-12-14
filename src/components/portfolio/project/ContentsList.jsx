@@ -1,18 +1,15 @@
 import React from 'react';
+import { project } from 'messages';
 import ContentsCard from './ContentsCard';
 
 function ContentsList() {
   return (
     <ul>
-      <li>
-        <ContentsCard />
-      </li>
-      <li>
-        <ContentsCard />
-      </li>
-      <li>
-        <ContentsCard />
-      </li>
+      {project.map((_project) => (
+        <li>
+          <ContentsCard project={_project} />
+        </li>
+      ))}
     </ul>
   );
 }

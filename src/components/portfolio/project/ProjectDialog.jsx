@@ -16,7 +16,8 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 export default function ProjectDialog(props) {
-  const { open, closeDialog } = props;
+  const { open, closeDialog, project } = props;
+  const { title, gif, subtitle, feature, stack, demo, github } = project;
 
   return (
     <div>
@@ -29,7 +30,7 @@ export default function ProjectDialog(props) {
         aria-describedby="scroll-dialog-description"
         maxWidth="desktop"
       >
-        <DialogTitle id="scroll-dialog-title">Practice: Todo List</DialogTitle>
+        <DialogTitle id="scroll-dialog-title">{title}</DialogTitle>
         <DialogContent dividers>
           <DialogContentText id="scroll-dialog-description">
             <Box
@@ -47,57 +48,43 @@ export default function ProjectDialog(props) {
               >
                 <CardMedia
                   component="img"
-                  image="/images/todolist.gif"
+                  image={`/images/${gif}`}
                   alt="todolist"
                 />
               </Card>
             </Box>
 
             <Typography variant="subtitle1" gutterBottom>
-              This is a simple to-do list website developed after learning react
-              and mobx for the first time. It has the ability to add, remove,
-              and filter to-do lists. Save the data of the todo list created by
-              utilizing localStorage.
+              {subtitle}
             </Typography>
-            <Typography variant="h6" gutterBottom align="left">
+            <Typography variant="h6" gutterBottom>
               feature
             </Typography>
-            <Typography variant="body1" component="ul" gutterBottom>
-              <li>
-                - Adding todo Items to the todo list by typing them with the
-                keyboard.
-              </li>
-              <li>
-                - Change to complete state by clicking the checkbox of todo list
-                (add completed class to li tag, added checked attribute to input
-                tag).
-              </li>
-              <li>- Delete the element using the x button in the todo list.</li>
-              <li>
-                - Change to input mode when double-clicking todo list (add
-                editing class to li tag) However, if you press esc key while
-                editing is not completed, it returns to view mode without
-                modification.
-              </li>
-              <li>
-                - Show the number of items counted in todo list at the bottom of
-                the list Check the status value of the todo list and show only
-                the items in the status when you click the to-do or completed
-                job
-              </li>
-              <li>
-                - Storing data in localStorage to reflect the TodoItem&apos;s
-                CRUD. Therefore, you should be able to check the saved data even
-                after refreshing.
-              </li>
+            <Typography component="ul" gutterBottom>
+              {feature.map((_feature) => (
+                <li>{`- ${_feature}`}</li>
+              ))}
             </Typography>
-            <Typography
-              component="a"
-              variant="h6"
-              href="https://kiminseob.github.io/react-todo-list-step1/"
+            <Typography variant="h6">stack</Typography>
+            <Typography gutterBottom>{stack}</Typography>
+            <Box
+              sx={{
+                display: 'flex',
+              }}
             >
-              Demo
-            </Typography>
+              <Box
+                sx={{
+                  marginRight: '1rem',
+                }}
+              >
+                <Typography component="a" variant="h6" href={demo}>
+                  Demo
+                </Typography>
+              </Box>
+              <Typography component="a" variant="h6" href={github}>
+                Github
+              </Typography>
+            </Box>
           </DialogContentText>
         </DialogContent>
         <DialogActions>

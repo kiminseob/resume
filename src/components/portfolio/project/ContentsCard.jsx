@@ -38,7 +38,8 @@ const muiPaperStyle = (theme) => ({
   },
 });
 
-function ContentsCard() {
+function ContentsCard({ project }) {
+  const { title, image, subtitle } = project;
   const [open, setOpen] = useState(false);
 
   const openDialog = () => {
@@ -69,7 +70,7 @@ function ContentsCard() {
           >
             <CardMedia
               component="img"
-              image="/images/todolist.png"
+              image={`/images/${image}`}
               alt="todolist"
               sx={{ objectFit: 'contain', width: 'unset' }}
             />
@@ -79,7 +80,7 @@ function ContentsCard() {
               }}
             >
               <Typography gutterBottom variant="h5" component="div">
-                Practice : Todo List
+                {title}
               </Typography>
               <Typography
                 variant="subtitle1"
@@ -92,10 +93,7 @@ function ContentsCard() {
                   textOverflow: 'ellipsis',
                 }}
               >
-                This is a simple to-do list website developed after learning
-                react and mobx for the first time. It has the ability to add,
-                remove, and filter to-do lists. Save the data of the todo list
-                created by utilizing localStorage.
+                {subtitle}
               </Typography>
               <CardActions
                 sx={{
@@ -112,7 +110,7 @@ function ContentsCard() {
           </Card>
         </Paper>
       </Box>
-      <ProjectDialog open={open} closeDialog={closeDialog} />
+      <ProjectDialog open={open} closeDialog={closeDialog} project={project} />
     </>
   );
 }
