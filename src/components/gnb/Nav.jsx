@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useNavigate } from 'react-router';
 import customTheme from 'scss/variable.module.scss';
+import { LocalStore } from 'store';
 import Profile from './Profile';
 
 const tabsStyle = () => ({
@@ -39,18 +40,21 @@ function LinkTab(props) {
 }
 
 function Nav() {
-  const [value, setValue] = useState(0);
+  const [navTabValue, setNavTabValue] = useState(
+    LocalStore.getItem('navTabValue') ?? 0
+  );
   const { home, project, about, others } = nav;
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    LocalStore.setItem('navTabValue', newValue);
+    setNavTabValue(newValue);
   };
 
   return (
     <nav>
-      <Profile setValue={setValue} />
+      <Profile setNavTabValue={setNavTabValue} LocalStore={LocalStore} />
       <Tabs
-        value={value}
+        value={navTabValue}
         onChange={handleChange}
         TabIndicatorProps={{
           sx: { background: customTheme.navTxtSelectedColor },

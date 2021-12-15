@@ -3,11 +3,12 @@ import { Avatar } from '@mui/material';
 import { useNavigate } from 'react-router';
 
 function Profile(props) {
-  const { setValue } = props;
+  const { setNavTabValue, LocalStore } = props;
   const navigate = useNavigate();
 
   const handleClick = () => {
-    setValue(0);
+    setNavTabValue(0);
+    LocalStore.setItem('navTabValue', 0);
     navigate('/home');
   };
 
