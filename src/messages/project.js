@@ -1,5 +1,6 @@
 export default [
   {
+    id: 0,
     title: 'Practice: Todo List1',
     image: 'todolist.png',
     gif: 'todolist.gif',
@@ -18,6 +19,7 @@ export default [
     github: 'https://github.com/kiminseob/react-todo-list-step1',
   },
   {
+    id: 1,
     title: 'Practice: Todo List2',
     image: 'todolist.png',
     gif: 'todolist.gif',
@@ -36,6 +38,7 @@ export default [
     github: 'https://github.com/kiminseob/react-todo-list-step1',
   },
   {
+    id: 2,
     title: 'Practice: Todo List3',
     image: 'todolist.png',
     gif: 'todolist.gif',

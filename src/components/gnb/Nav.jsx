@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { nav } from 'messages';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useNavigate } from 'react-router';
 import customTheme from 'scss/variable.module.scss';
-import { LocalStore } from 'store';
+import { useStore } from 'utils';
+import { observer } from 'mobx-react-lite';
 import Profile from './Profile';
 
 const tabsStyle = () => ({
@@ -40,19 +41,17 @@ function LinkTab(props) {
 }
 
 function Nav() {
-  const [navTabValue, setNavTabValue] = useState(
-    LocalStore.getItem('navTabValue') ?? 0
-  );
+  const { NavStore } = useStore();
+  const { navTabValue } = NavStore;
   const { home, project, about, others } = nav;
 
   const handleChange = (event, newValue) => {
-    LocalStore.setItem('navTabValue', newValue);
-    setNavTabValue(newValue);
+    NavStore.updateNavTabValue(newValue);
   };
 
   return (
     <nav>
-      <Profile setNavTabValue={setNavTabValue} LocalStore={LocalStore} />
+      <Profile handleChange={handleChange} />
       <Tabs
         value={navTabValue}
         onChange={handleChange}
@@ -70,4 +69,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default observer(Nav);

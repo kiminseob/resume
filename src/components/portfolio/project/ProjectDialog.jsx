@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import Typography from '@mui/material/Typography';
@@ -32,60 +31,60 @@ export default function ProjectDialog(props) {
       >
         <DialogTitle id="scroll-dialog-title">{title}</DialogTitle>
         <DialogContent dividers>
-          <DialogContentText id="scroll-dialog-description">
-            <Box
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              marginBottom: '1rem',
+            }}
+          >
+            <Card
               sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                marginBottom: '1rem',
+                width: '50%',
+                height: '50%',
               }}
             >
-              <Card
-                sx={{
-                  width: '50%',
-                  height: '50%',
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  image={`/images/${gif}`}
-                  alt="todolist"
-                />
-              </Card>
-            </Box>
+              <CardMedia
+                component="img"
+                image={`/images/${gif}`}
+                alt="todolist"
+              />
+            </Card>
+          </Box>
 
-            <Typography variant="subtitle1" gutterBottom>
-              {subtitle}
-            </Typography>
-            <Typography variant="h6" gutterBottom>
-              feature
-            </Typography>
-            <Typography component="ul" gutterBottom>
-              {feature.map((_feature) => (
-                <li>{`- ${_feature}`}</li>
-              ))}
-            </Typography>
-            <Typography variant="h6">stack</Typography>
-            <Typography gutterBottom>{stack}</Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            {subtitle}
+          </Typography>
+          <Typography variant="h6" gutterBottom>
+            feature
+          </Typography>
+          <Typography component="ul" gutterBottom>
+            {feature.map((_feature) => (
+              <li key={_feature}>{`- ${_feature}`}</li>
+            ))}
+          </Typography>
+          <Typography variant="h6">stack</Typography>
+          <Typography component="span" gutterBottom>
+            {stack}
+          </Typography>
+          <Box
+            sx={{
+              display: 'flex',
+            }}
+          >
             <Box
               sx={{
-                display: 'flex',
+                marginRight: '1rem',
               }}
             >
-              <Box
-                sx={{
-                  marginRight: '1rem',
-                }}
-              >
-                <Typography component="a" variant="h6" href={demo}>
-                  Demo
-                </Typography>
-              </Box>
-              <Typography component="a" variant="h6" href={github}>
-                Github
+              <Typography component="a" variant="h6" href={demo}>
+                Demo
               </Typography>
             </Box>
-          </DialogContentText>
+            <Typography component="a" variant="h6" href={github}>
+              Github
+            </Typography>
+          </Box>
         </DialogContent>
         <DialogActions>
           <Button onClick={closeDialog} autoFocus>

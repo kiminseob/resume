@@ -42,13 +42,8 @@ function ContentsCard({ project }) {
   const { title, image, subtitle } = project;
   const [open, setOpen] = useState(false);
 
-  const openDialog = () => {
-    setOpen(true);
-  };
-
-  const closeDialog = () => {
-    setOpen(false);
-  };
+  const openDialog = () => setOpen(true);
+  const closeDialog = () => setOpen(false);
 
   return (
     <>
@@ -79,7 +74,18 @@ function ContentsCard({ project }) {
                 '&:last-child': { paddingBottom: '2.875rem' }, // 46px
               }}
             >
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="div"
+                sx={{
+                  display: '-webkit-box',
+                  WebkitBoxOrient: 'vertical',
+                  WebkitLineClamp: '1',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                }}
+              >
                 {title}
               </Typography>
               <Typography
@@ -87,8 +93,8 @@ function ContentsCard({ project }) {
                 color="text.secondary"
                 sx={{
                   display: '-webkit-box',
-                  '-webkit-box-orient': 'vertical',
-                  '-webkit-line-clamp': '4',
+                  WebkitBoxOrient: 'vertical',
+                  WebkitLineClamp: '4',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
                 }}
@@ -102,9 +108,7 @@ function ContentsCard({ project }) {
                   right: 0,
                 }}
               >
-                <Button size="small" onClick={openDialog}>
-                  Learn More
-                </Button>
+                <Button onClick={openDialog}>Detail</Button>
               </CardActions>
             </CardContent>
           </Card>

@@ -6,7 +6,7 @@ function ContentsList() {
   return (
     <ul>
       {project.map((_project) => (
-        <li>
+        <li key={_project.id}>
           <ContentsCard project={_project} />
         </li>
       ))}
