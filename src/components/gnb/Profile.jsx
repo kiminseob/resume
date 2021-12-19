@@ -2,14 +2,10 @@ import React from 'react';
 import { Avatar } from '@mui/material';
 import { useNavigate } from 'react-router';
 
-function Profile(props) {
-  const { handleChange } = props;
+function Profile() {
   const navigate = useNavigate();
 
-  const handleClick = (e) => {
-    handleChange(e, 0);
-    navigate('/home');
-  };
+  const handleClick = () => navigate('/home');
 
   return (
     <div className="profile">

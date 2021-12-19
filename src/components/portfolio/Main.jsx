@@ -6,11 +6,11 @@ function Main() {
   return (
     <main>
       <Routes>
-        <Route exact path="/" element={<Navigate to="/home" />} />
-        <Route exact path="/home" element={<Home />} />
-        <Route exact path="/project" element={<Project />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/others" element={<Others />} />
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/others" element={<Others />} />
       </Routes>
     </main>
   );

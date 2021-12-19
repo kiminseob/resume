@@ -1,12 +1,20 @@
 import React from 'react';
-import { nav } from 'messages';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useNavigate } from 'react-router';
+import { useLocation } from 'react-router-dom';
 import customTheme from 'scss/variable.module.scss';
-import { useStore } from 'utils';
 import { observer } from 'mobx-react-lite';
+import { useStore } from 'utils';
 import Profile from './Profile';
+import Language from './Language';
+
+const routes = [
+  { name: '/home', value: 0 },
+  { name: '/project', value: 1 },
+  { name: '/about', value: 2 },
+  { name: '/others', value: 3 },
+];
 
 const tabsStyle = () => ({
   width: '100%',
@@ -42,29 +50,28 @@ function LinkTab(props) {
 
 function Nav() {
   const { NavStore } = useStore();
-  const { navTabValue } = NavStore;
-  const { home, project, about, others } = nav;
-
-  const handleChange = (event, newValue) => {
-    NavStore.updateNavTabValue(newValue);
-  };
+  const { pathname } = useLocation();
+  const { value } = routes.filter(({ name }) => pathname === name)[0];
+  const { home, project, about, others } = NavStore.message.nav;
 
   return (
     <nav>
-      <Profile handleChange={handleChange} />
-      <Tabs
-        value={navTabValue}
-        onChange={handleChange}
-        TabIndicatorProps={{
-          sx: { background: customTheme.navTxtSelectedColor },
-        }}
-        sx={tabsStyle}
-      >
-        <LinkTab label={home} href="/home" />
-        <LinkTab label={project} href="/project" />
-        <LinkTab label={about} href="/about" />
-        <LinkTab label={others} href="/others" />
-      </Tabs>
+      <Language />
+      <div>
+        <Profile />
+        <Tabs
+          value={value}
+          TabIndicatorProps={{
+            sx: { background: customTheme.navTxtSelectedColor },
+          }}
+          sx={tabsStyle}
+        >
+          <LinkTab label={home} href="/home" />
+          <LinkTab label={project} href="/project" />
+          <LinkTab label={about} href="/about" />
+          <LinkTab label={others} href="/others" />
+        </Tabs>
+      </div>
     </nav>
   );
 }

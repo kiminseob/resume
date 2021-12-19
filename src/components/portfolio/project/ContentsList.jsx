@@ -1,11 +1,13 @@
 import React from 'react';
-import { project } from 'messages';
+import { useStore } from 'utils';
 import ContentsCard from './ContentsCard';
 
 function ContentsList() {
+  const { NavStore } = useStore();
+
   return (
     <ul>
-      {project.map((_project) => (
+      {NavStore.message.project.map((_project) => (
         <li key={_project.id}>
           <ContentsCard project={_project} />
         </li>

@@ -1,19 +1,21 @@
 import { observable, makeObservable, action } from 'mobx';
-import { LocalStore } from 'store';
+import messages from 'messages';
 
 class NavStore {
-  navTabValue = LocalStore.getItem('navTabValue') ?? 0;
+  language = '한국어';
+
+  message = messages(this.language);
 
   constructor() {
     makeObservable(this, {
-      navTabValue: observable,
-      updateNavTabValue: action,
+      language: observable,
+      setLanguage: action,
     });
   }
 
-  updateNavTabValue(value) {
-    this.navTabValue = value;
-    LocalStore.setItem('navTabValue', value);
+  setLanguage(value) {
+    this.language = value;
+    this.message = messages(this.language);
   }
 }
 

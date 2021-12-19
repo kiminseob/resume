@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav } from 'components';
+import { observer } from 'mobx-react';
 import Main from './Main';
 
 function Portfolio() {
@@ -11,4 +12,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default observer(Portfolio);
