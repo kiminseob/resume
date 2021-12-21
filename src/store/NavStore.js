@@ -9,6 +9,7 @@ class NavStore {
   constructor() {
     makeObservable(this, {
       language: observable,
+      message: observable,
       setLanguage: action,
     });
   }

@@ -6,12 +6,11 @@ export default {
                 현재는 티맥스소프트에서 Superframe 어드민의 UI를 개발하고 있습니다.
             `,
   tech: {
-    title: 'Tech Stack',
+    title: '기술 스택',
     contents: 'React, MobX, SCSS, Material-UI',
   },
   career: {
-    title: 'career',
-    contents:
-      'TmaxSoft / Middleware HQ / UI develop team / 2021.08.01 ~ (present)',
+    title: '경력',
+    contents: 'TmaxSoft / Middleware HQ / UI 개발 팀 / 2021.08.01 ~ (현재)',
   },
 };

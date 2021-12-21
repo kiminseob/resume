@@ -10,6 +10,7 @@ import Profile from './Profile';
 import Language from './Language';
 
 const routes = [
+  { name: '/', value: 0 },
   { name: '/home', value: 0 },
   { name: '/project', value: 1 },
   { name: '/about', value: 2 },

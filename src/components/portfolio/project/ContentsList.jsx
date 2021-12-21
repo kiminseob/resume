@@ -1,3 +1,4 @@
+import { observer } from 'mobx-react';
 import React from 'react';
 import { useStore } from 'utils';
 import ContentsCard from './ContentsCard';
@@ -16,4 +17,4 @@ function ContentsList() {
   );
 }
 
-export default ContentsList;
+export default observer(ContentsList);
