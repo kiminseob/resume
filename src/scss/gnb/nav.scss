@@ -1,14 +1,5 @@
-@import '../variable.module';
-@import '../mixin';
-
 nav {
   display: flex;
-  flex-direction: column;
-  padding-bottom: 1rem;
-  background-color: $nav-background-color;
-
-  > div {
-    display: flex;
-    align-items: center;
-  }
+  padding: 1rem 0;
+  align-items: center;
 }

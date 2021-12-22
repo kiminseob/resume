@@ -4,8 +4,8 @@ import React from 'react';
 import { useStore } from 'utils';
 
 function About() {
-  const { NavStore } = useStore();
-  const { introduce, tech, career } = NavStore.message.about;
+  const { GnbStore } = useStore();
+  const { introduce, tech, career } = GnbStore.message.about;
 
   return (
     <div className="about">

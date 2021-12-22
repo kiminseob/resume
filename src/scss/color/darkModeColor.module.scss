@@ -1,0 +1,12 @@
+$nav-background-color: #121212;
+$nav-txt-color: #b1b1b1;
+$nav-txt-selected-color: #b1b1b1;
+
+$portfolio-background-color: antiquewhite;
+$portfolio-txt-color: #0a0708;
+
+:export {
+  navBackgroundColor: $nav-background-color;
+  navtxtcolor: $nav-txt-color;
+  navtxtselectedcolor: $nav-txt-selected-color;
+}

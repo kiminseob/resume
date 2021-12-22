@@ -3,11 +3,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useNavigate } from 'react-router';
 import { useLocation } from 'react-router-dom';
-import customTheme from 'scss/variable.module.scss';
 import { observer } from 'mobx-react-lite';
 import { useStore } from 'utils';
 import Profile from './Profile';
-import Language from './Language';
 
 const routes = [
   { name: '/', value: 0 },
@@ -17,18 +15,17 @@ const routes = [
   { name: '/others', value: 3 },
 ];
 
-const tabsStyle = () => ({
+const tabsStyle = (theme) => ({
   width: '100%',
   '.MuiTabs-flexContainer': {
     justifyContent: 'space-evenly',
   },
-});
-
-const tabStyle = () => ({
-  textTransform: 'none',
-  color: customTheme.navTxtColor,
-  '&.Mui-selected': {
-    color: customTheme.navTxtSelectedColor,
+  '& .MuiButtonBase-root': {
+    textTransform: 'none',
+    color: theme.navtxtcolor,
+    '&.Mui-selected': {
+      color: theme.navtxtselectedcolor,
+    },
   },
 });
 
@@ -43,36 +40,34 @@ function LinkTab(props) {
         event.preventDefault();
         navigate(href);
       }}
-      sx={tabStyle}
+      // sx={tabStyle}
       {...props}
     />
   );
 }
 
 function Nav() {
-  const { NavStore } = useStore();
+  const { GnbStore } = useStore();
   const { pathname } = useLocation();
   const { value } = routes.filter(({ name }) => pathname === name)[0];
-  const { home, project, about, others } = NavStore.message.nav;
-
+  const { home, project, about, others } = GnbStore.message.nav;
+  const theme = GnbStore.themeColor;
+  console.log(theme);
   return (
-    <nav>
-      <Language />
-      <div>
-        <Profile />
-        <Tabs
-          value={value}
-          TabIndicatorProps={{
-            sx: { background: customTheme.navTxtSelectedColor },
-          }}
-          sx={tabsStyle}
-        >
-          <LinkTab label={home} href="/home" />
-          <LinkTab label={project} href="/project" />
-          <LinkTab label={about} href="/about" />
-          <LinkTab label={others} href="/others" />
-        </Tabs>
-      </div>
+    <nav style={{ backgroundColor: theme.navBackgroundColor }}>
+      <Profile />
+      <Tabs
+        value={value}
+        TabIndicatorProps={{
+          sx: { background: theme.navtxtselectedcolor },
+        }}
+        sx={tabsStyle(theme)}
+      >
+        <LinkTab label={home} href="/home" />
+        <LinkTab label={project} href="/project" />
+        <LinkTab label={about} href="/about" />
+        <LinkTab label={others} href="/others" />
+      </Tabs>
     </nav>
   );
 }

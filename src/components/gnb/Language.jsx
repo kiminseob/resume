@@ -5,11 +5,11 @@ import { useStore } from 'utils';
 import customTheme from 'scss/variable.module.scss';
 
 function Language() {
-  const { NavStore } = useStore();
+  const { GnbStore } = useStore();
   const [value, setValue] = useState('한국어');
 
   const handleChange = (e, v) => {
-    NavStore.setLanguage(v);
+    GnbStore.setLanguage(v);
     setValue(v);
   };
 
@@ -29,11 +29,12 @@ function Language() {
             margin: '0 0.4rem',
             border: 0,
             lineHeight: '0.8125rem',
+            color: customTheme.navtxtcolor,
             '&.Mui-selected': {
               backgroundColor: 'rgba(0,0,0,0)',
-              color: customTheme.navTxtSelectedColor,
+              color: customTheme.navtxtselectedcolor,
               borderRadius: 0,
-              borderBottom: `solid ${customTheme.navTxtSelectedColor} 1px`,
+              borderBottom: `solid ${customTheme.navtxtselectedcolor} 1px`,
             },
           },
         },

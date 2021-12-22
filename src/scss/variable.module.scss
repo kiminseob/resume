@@ -8,7 +8,8 @@ $tablet-breakpoint: 40rem; // 640px
 $laptop-breakpoint: 64rem; // 1024px
 $desktop-breakpoint: 75rem; // 1200px
 
-$nav-background-color: #444444;
+// default mode
+$nav-background-color: #ffffff;
 $nav-txt-color: #b1b1b1;
 $nav-txt-selected-color: #b1b1b1;
 
@@ -26,6 +27,6 @@ $portfolio-txt-color: #0a0708;
   laptopBreakpoint: $laptop-breakpoint;
   desktopBreakpoint: $desktop-breakpoint;
 
-  navTxtColor: $nav-txt-color;
-  navTxtSelectedColor: $nav-txt-selected-color;
+  navtxtcolor: $nav-txt-color;
+  navtxtselectedcolor: $nav-txt-selected-color;
 }

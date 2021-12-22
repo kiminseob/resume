@@ -4,11 +4,11 @@ import { useStore } from 'utils';
 import ContentsCard from './ContentsCard';
 
 function ContentsList() {
-  const { NavStore } = useStore();
+  const { GnbStore } = useStore();
 
   return (
     <ul>
-      {NavStore.message.project.map((_project) => (
+      {GnbStore.message.project.map((_project) => (
         <li key={_project.id}>
           <ContentsCard project={_project} />
         </li>
