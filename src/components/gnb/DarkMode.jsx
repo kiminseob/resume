@@ -30,13 +30,13 @@ function DarkMode() {
   const handleChange = () => GnbStore.toggleDarkMode();
 
   const BrightnessIcon = GnbStore.isDarkMode ? (
-    <LightModeIcon onClick={handleChange} />
+    <LightModeIcon />
   ) : (
-    <DarkModeIcon onClick={handleChange} />
+    <DarkModeIcon />
   );
 
   return (
-    <Paper elevation={3} sx={style(theme)}>
+    <Paper elevation={3} sx={style(theme)} onClick={handleChange}>
       {BrightnessIcon}
     </Paper>
   );

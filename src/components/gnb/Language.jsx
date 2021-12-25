@@ -34,10 +34,8 @@ function Language() {
   const currentLanguage = GnbStore.isKorean ? 'A' : '가';
 
   return (
-    <Paper elevation={3} sx={style(theme)}>
-      <Button onClick={handleChange} disableRipple>
-        {currentLanguage}
-      </Button>
+    <Paper elevation={3} sx={style(theme)} onClick={handleChange}>
+      <Button disableRipple>{currentLanguage}</Button>
     </Paper>
   );
 }
