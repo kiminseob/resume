@@ -48,19 +48,19 @@ export const theme = createTheme({
         root: {
           cursor: 'pointer',
           [breakpoints.up(desktop)]: {
-            width: '5rem', // 80px
-            height: '5rem',
+            width: '4rem',
+            height: '4rem',
           },
           [breakpoints.between(laptop, desktop)]: {
-            width: '4.0625rem', // 65px
-            height: '4.0625rem',
+            width: '3.5rem',
+            height: '3.5rem',
           },
           [breakpoints.between(tablet, laptop)]: {
-            width: '3.125rem', // 50px
-            height: '3.125rem',
+            width: '3rem',
+            height: '3rem',
           },
           [breakpoints.between(mobile, tablet)]: {
-            width: '2.1875rem', // 35px
+            width: '2.1875rem',
             height: '2.1875rem',
           },
         },

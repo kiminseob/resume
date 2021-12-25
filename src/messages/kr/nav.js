@@ -1,6 +1,18 @@
-export default {
-  home: '홈',
-  project: '프로젝트',
-  about: '소개',
-  others: '기타',
-};
+export default [
+  {
+    title: '홈',
+    path: 'home',
+  },
+  {
+    title: '프로젝트',
+    path: 'project',
+  },
+  {
+    title: '소개',
+    path: 'about',
+  },
+  {
+    title: '기타',
+    path: 'others',
+  },
+];

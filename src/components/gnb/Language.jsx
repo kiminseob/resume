@@ -12,7 +12,7 @@ const style = (theme) => ({
   height: '3rem',
   position: 'fixed',
   bottom: '5rem',
-  right: '1rem',
+  right: '1.5rem',
   borderRadius: '2rem',
   cursor: 'pointer',
   backgroundColor: theme.darkmodeBackgroundColor,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Header, Language, DarkMode } from 'components';
+import { Nav, Language, DarkMode } from 'components';
 import { useStore } from 'utils';
 import { observer } from 'mobx-react-lite';
 import Main from './Main';
@@ -14,7 +14,6 @@ function Portfolio() {
 
   return (
     <div className="portfolio" style={style}>
-      <Header />
       <Nav />
       <Main />
       <Language />

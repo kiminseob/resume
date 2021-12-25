@@ -1,4 +1,4 @@
-$font-xlarge: 1.3rem; // 24px
+$font-xlarge: 1.2rem; // 19.2px
 $font-large: 1.125rem; // 18px
 $font-medium: 1rem; // 16px
 $font-small: 0.8rem; // 13px
@@ -7,14 +7,6 @@ $mobile-breakpoint: 0rem;
 $tablet-breakpoint: 40rem; // 640px
 $laptop-breakpoint: 64rem; // 1024px
 $desktop-breakpoint: 75rem; // 1200px
-
-// default mode
-$nav-background-color: #ffffff;
-$nav-txt-color: #b1b1b1;
-$nav-txt-selected-color: #b1b1b1;
-
-$portfolio-background-color: antiquewhite;
-$portfolio-txt-color: #0a0708;
 
 :export {
   fontXLarge: $font-xlarge;

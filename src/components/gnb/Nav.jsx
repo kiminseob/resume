@@ -1,4 +1,8 @@
-import React from 'react';
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Container from '@mui/material/Container';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useNavigate } from 'react-router';
@@ -6,6 +10,7 @@ import { useLocation } from 'react-router-dom';
 import { observer } from 'mobx-react-lite';
 import { useStore } from 'utils';
 import Profile from './Profile';
+import TabMenu from './TabMenu';
 
 const routes = [
   { name: '/', value: 0 },
@@ -40,36 +45,73 @@ function LinkTab(props) {
         event.preventDefault();
         navigate(href);
       }}
-      // sx={tabStyle}
       {...props}
     />
   );
 }
 
-function Nav() {
+const ResponsiveAppBar = () => {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
   const { GnbStore } = useStore();
   const { pathname } = useLocation();
   const { value } = routes.filter(({ name }) => pathname === name)[0];
-  const { home, project, about, others } = GnbStore.message.nav;
+  const { nav } = GnbStore.message;
   const theme = GnbStore.themeColor;
 
-  return (
-    <nav style={{ backgroundColor: theme.navBackgroundColor }}>
-      <Profile />
-      <Tabs
-        value={value}
-        TabIndicatorProps={{
-          sx: { background: theme.navTxtSelectedColor },
-        }}
-        sx={tabsStyle(theme)}
-      >
-        <LinkTab label={home} href="/home" />
-        <LinkTab label={project} href="/project" />
-        <LinkTab label={about} href="/about" />
-        <LinkTab label={others} href="/others" />
-      </Tabs>
-    </nav>
-  );
-}
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
 
-export default observer(Nav);
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+
+  return (
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: theme.navBackgroundColor, padding: '0.5rem 0' }}
+    >
+      <Container>
+        <Toolbar
+          disableGutters
+          sx={{ display: 'flex', justifyContent: 'space-between' }}
+        >
+          <Profile
+            anchorElUser={anchorElUser}
+            handleOpenUserMenu={handleOpenUserMenu}
+            handleCloseUserMenu={handleCloseUserMenu}
+          />
+          <Box
+            sx={{ flexGrow: 1, display: { mobile: 'none', tablet: 'flex' } }}
+          >
+            <Tabs
+              value={value}
+              TabIndicatorProps={{
+                sx: { background: theme.navTxtSelectedColor },
+              }}
+              sx={tabsStyle(theme)}
+            >
+              {nav.map(({ title, path }) => (
+                <LinkTab key={title} label={title} href={path} />
+              ))}
+            </Tabs>
+          </Box>
+          <TabMenu
+            anchorElNav={anchorElNav}
+            handleOpenNavMenu={handleOpenNavMenu}
+            handleCloseNavMenu={handleCloseNavMenu}
+          />
+        </Toolbar>
+      </Container>
+    </AppBar>
+  );
+};
+export default observer(ResponsiveAppBar);

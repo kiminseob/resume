@@ -1,6 +1,18 @@
-export default {
-  home: 'Home',
-  project: 'Project',
-  about: 'About',
-  others: 'Others',
-};
+export default [
+  {
+    title: 'Home',
+    path: 'home',
+  },
+  {
+    title: 'Project',
+    path: 'project',
+  },
+  {
+    title: 'Introduce',
+    path: 'about',
+  },
+  {
+    title: 'Others',
+    path: 'others',
+  },
+];
