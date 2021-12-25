@@ -4,9 +4,9 @@ import defaultColor from 'scss/color/defaultColor.module.scss';
 import darkModeColor from 'scss/color/darkModeColor.module.scss';
 
 class GnbStore {
-  language = '한국어';
+  isKorean = true;
 
-  message = messages(this.language);
+  message = messages(this.isKorean);
 
   isDarkMode = false;
 
@@ -14,18 +14,18 @@ class GnbStore {
 
   constructor() {
     makeObservable(this, {
-      language: observable,
+      isKorean: observable,
       message: observable,
       isDarkMode: observable,
       themeColor: observable,
-      setLanguage: action,
+      toggleLanguage: action,
       toggleDarkMode: action,
     });
   }
 
-  setLanguage(value) {
-    this.language = value;
-    this.message = messages(this.language);
+  toggleLanguage() {
+    this.isKorean = !this.isKorean;
+    this.message = messages(this.isKorean);
   }
 
   toggleDarkMode() {

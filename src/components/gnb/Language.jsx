@@ -1,49 +1,45 @@
-import React, { useState } from 'react';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import React from 'react';
+import Paper from '@mui/material/Paper';
+import Button from '@mui/material/Button';
 import { useStore } from 'utils';
-import customTheme from 'scss/variable.module.scss';
+import { observer } from 'mobx-react-lite';
+
+const style = (theme) => ({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '3rem',
+  height: '3rem',
+  position: 'fixed',
+  bottom: '5rem',
+  right: '1rem',
+  borderRadius: '2rem',
+  cursor: 'pointer',
+  backgroundColor: theme.darkmodeBackgroundColor,
+  '& .MuiButton-root': {
+    minWidth: 0,
+    padding: 0,
+    color: theme.darkmodeColor,
+  },
+});
 
 function Language() {
   const { GnbStore } = useStore();
-  const [value, setValue] = useState('한국어');
+  const theme = GnbStore.themeColor;
 
-  const handleChange = (e, v) => {
-    GnbStore.setLanguage(v);
-    setValue(v);
+  const handleChange = () => {
+    GnbStore.toggleLanguage();
   };
 
+  const currentLanguage = GnbStore.isKorean ? 'A' : '가';
+
   return (
-    <ToggleButtonGroup
-      color="primary"
-      value={value}
-      size="small"
-      exclusive
-      onChange={handleChange}
-      sx={{
-        '&': {
-          paddingTop: '0.188rem',
-          justifyContent: 'flex-end',
-          '.MuiButtonBase-root': {
-            padding: '0',
-            margin: '0 0.4rem',
-            border: 0,
-            lineHeight: '0.8125rem',
-            color: customTheme.navtxtcolor,
-            '&.Mui-selected': {
-              backgroundColor: 'rgba(0,0,0,0)',
-              color: customTheme.navtxtselectedcolor,
-              borderRadius: 0,
-              borderBottom: `solid ${customTheme.navtxtselectedcolor} 1px`,
-            },
-          },
-        },
-      }}
-    >
-      <ToggleButton value="한국어">한국어</ToggleButton>
-      <ToggleButton value="English">English</ToggleButton>
-    </ToggleButtonGroup>
+    <Paper elevation={3} sx={style(theme)}>
+      <Button onClick={handleChange} disableRipple>
+        {currentLanguage}
+      </Button>
+    </Paper>
   );
 }
 
-export default Language;
+export default observer(Language);

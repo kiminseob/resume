@@ -1,14 +1,13 @@
 import React from 'react';
-import Language from './Language';
-import DarkMode from './DarkMode';
+import { useStore } from 'utils';
 
 function Header() {
-  return (
-    <header>
-      <DarkMode />
-      <Language />
-    </header>
-  );
+  const { GnbStore } = useStore();
+  const theme = GnbStore.themeColor;
+  const style = {
+    backgroundColor: theme.headerBackgroundColor,
+  };
+  return <header style={style} />;
 }
 
 export default Header;

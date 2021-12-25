@@ -22,9 +22,9 @@ const tabsStyle = (theme) => ({
   },
   '& .MuiButtonBase-root': {
     textTransform: 'none',
-    color: theme.navtxtcolor,
+    color: theme.navTxtColor,
     '&.Mui-selected': {
-      color: theme.navtxtselectedcolor,
+      color: theme.navTxtSelectedColor,
     },
   },
 });
@@ -52,14 +52,14 @@ function Nav() {
   const { value } = routes.filter(({ name }) => pathname === name)[0];
   const { home, project, about, others } = GnbStore.message.nav;
   const theme = GnbStore.themeColor;
-  console.log(theme);
+
   return (
     <nav style={{ backgroundColor: theme.navBackgroundColor }}>
       <Profile />
       <Tabs
         value={value}
         TabIndicatorProps={{
-          sx: { background: theme.navtxtselectedcolor },
+          sx: { background: theme.navTxtSelectedColor },
         }}
         sx={tabsStyle(theme)}
       >
