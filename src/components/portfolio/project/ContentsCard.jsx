@@ -7,6 +7,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { useStore } from 'utils';
+import { observer } from 'mobx-react-lite';
 import ProjectDialog from './ProjectDialog';
 
 const muiPaperStyle = (theme) => ({
@@ -41,9 +43,10 @@ const muiPaperStyle = (theme) => ({
 function ContentsCard({ project }) {
   const { title, image, subtitle } = project;
   const [open, setOpen] = useState(false);
-
+  const { GnbStore } = useStore();
   const openDialog = () => setOpen(true);
   const closeDialog = () => setOpen(false);
+  const theme = GnbStore.themeColor;
 
   return (
     <>
@@ -72,6 +75,8 @@ function ContentsCard({ project }) {
             <CardContent
               sx={{
                 '&:last-child': { paddingBottom: '2.875rem' }, // 46px
+                backgroundColor: theme.portfolioBackgroundColor,
+                color: theme.portfolioTxtColor,
               }}
             >
               <Typography
@@ -97,6 +102,7 @@ function ContentsCard({ project }) {
                   WebkitLineClamp: '4',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
+                  color: 'inherit',
                 }}
               >
                 {subtitle}
@@ -119,4 +125,4 @@ function ContentsCard({ project }) {
   );
 }
 
-export default ContentsCard;
+export default observer(ContentsCard);

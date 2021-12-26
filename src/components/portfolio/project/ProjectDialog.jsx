@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';
 import { Box } from '@mui/system';
+import { useStore } from 'utils';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -17,6 +18,8 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 export default function ProjectDialog(props) {
   const { open, closeDialog, project } = props;
   const { title, gif, subtitle, feature, stack, demo, github } = project;
+  const { GnbStore } = useStore();
+  const theme = GnbStore.themeColor;
 
   return (
     <div>
@@ -28,6 +31,12 @@ export default function ProjectDialog(props) {
         aria-labelledby="scroll-dialog-title"
         aria-describedby="scroll-dialog-description"
         maxWidth="desktop"
+        sx={{
+          '& .MuiPaper-root': {
+            backgroundColor: theme.portfolioBackgroundColor,
+            color: theme.portfolioTxtColor,
+          },
+        }}
       >
         <DialogTitle id="scroll-dialog-title">{title}</DialogTitle>
         <DialogContent dividers>
@@ -77,11 +86,21 @@ export default function ProjectDialog(props) {
                 marginRight: '1rem',
               }}
             >
-              <Typography component="a" variant="h6" href={demo}>
+              <Typography
+                component="a"
+                variant="h6"
+                href={demo}
+                sx={{ color: 'inherit' }}
+              >
                 Demo
               </Typography>
             </Box>
-            <Typography component="a" variant="h6" href={github}>
+            <Typography
+              component="a"
+              variant="h6"
+              href={github}
+              sx={{ color: 'inherit' }}
+            >
               Github
             </Typography>
           </Box>
