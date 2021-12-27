@@ -11,7 +11,7 @@ export default {
   },
   career: {
     title: 'career',
-    contents:
-      'TmaxSoft / Middleware HQ / UI develop team / 2021.08.01 ~ (present)',
+    department: 'TmaxSoft / Middleware HQ / UI develop team',
+    date: '2021.08.01 ~ (present)',
   },
 };

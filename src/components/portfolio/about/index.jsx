@@ -14,7 +14,8 @@ function About() {
       <h3>{tech.title}</h3>
       <p>- {tech.contents}</p>
       <h3>{career.title}</h3>
-      <p>{career.contents}</p>
+      <p>{career.department}</p>
+      <p>{career.date}</p>
       <p>- Superframe 어드민 페이지 개발</p>
       <h3> 경력 프로젝트</h3>
       <p>프로젝트명</p>
