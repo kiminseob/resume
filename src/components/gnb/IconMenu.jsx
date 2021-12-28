@@ -19,12 +19,15 @@ const icon = {
 };
 
 const bottomNavStyle = (theme) => ({
-  width: '100%',
+  height: '100%',
+  aliginItems: 'center',
+  flexDirection: 'column',
   backgroundColor: theme.navBackgroundColor,
   '.MuiTabs-flexContainer': {
     justifyContent: 'space-evenly',
   },
   '& .MuiButtonBase-root': {
+    padding: 0,
     textTransform: 'none',
     color: theme.navTxtColor,
     '&.Mui-selected': {
@@ -33,16 +36,30 @@ const bottomNavStyle = (theme) => ({
   },
 });
 
+// const bottomNavStyle = (theme) => ({
+//   width: '100%',
+//   backgroundColor: theme.navBackgroundColor,
+//   '.MuiTabs-flexContainer': {
+//     justifyContent: 'space-evenly',
+//   },
+//   '& .MuiButtonBase-root': {
+//     textTransform: 'none',
+//     color: theme.navTxtColor,
+//     '&.Mui-selected': {
+//       color: theme.navTxtSelectedColor,
+//     },
+//   },
+// });
+
 function IconMenu() {
   const { pathname } = useLocation();
   const { GnbStore } = useStore();
   const navigate = useNavigate();
-
   const theme = GnbStore.themeColor;
   const { nav } = GnbStore.message;
 
   const [value, setValue] = useState(
-    nav.filter(({ path }) => pathname.includes(path))[0].path
+    nav.filter(({ path }) => pathname.includes(path))[0]?.path ?? 'home'
   );
 
   const handleChange = (event, newValue) => {
@@ -51,7 +68,9 @@ function IconMenu() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, display: { mobile: 'none', tablet: 'flex' } }}>
+    <Box
+      sx={{ height: 'inherit', display: { mobile: 'none', tablet: 'flex' } }}
+    >
       <BottomNavigation
         value={value}
         onChange={handleChange}

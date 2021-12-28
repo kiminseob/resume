@@ -8,7 +8,8 @@ import Profile from './Profile';
 import IconMenu from './IconMenu';
 import TabMenu from './TabMenu';
 
-const Nav = () => {
+const Nav = (props) => {
+  const { left } = props;
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const { GnbStore } = useStore();
@@ -29,10 +30,29 @@ const Nav = () => {
     setAnchorElUser(null);
   };
 
+  const leftAppBarStyle = {
+    '&': { width: '5rem', padding: '0.5rem 0' },
+    '& .MuiContainer-root': { height: '100%', padding: 0 },
+    '& .MuiToolbar-root': {
+      flexDirection: 'column',
+      height: '100%',
+      padding: 0,
+    },
+  };
+
+  const topAppBarStyle = {
+    width: '100%',
+    padding: '0.2rem 0',
+  };
+  const appBarStyle = left ? leftAppBarStyle : topAppBarStyle;
+
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: theme.navBackgroundColor, padding: '0.5rem 0' }}
+      sx={{
+        backgroundColor: theme.navBackgroundColor,
+        ...appBarStyle,
+      }}
     >
       <Container>
         <Toolbar
@@ -45,7 +65,6 @@ const Nav = () => {
             handleCloseUserMenu={handleCloseUserMenu}
           />
           <IconMenu />
-
           <TabMenu
             anchorElNav={anchorElNav}
             handleOpenNavMenu={handleOpenNavMenu}
