@@ -55,7 +55,7 @@ const ResponsiveAppBar = () => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const { GnbStore } = useStore();
   const { pathname } = useLocation();
-  const { value } = routes.filter(({ name }) => pathname === name)[0];
+  const { value } = routes.filter(({ name }) => pathname === name)?.[0] || {};
   const { nav } = GnbStore.message;
   const theme = GnbStore.themeColor;
 
@@ -74,28 +74,13 @@ const ResponsiveAppBar = () => {
     setAnchorElUser(null);
   };
 
-  const leftAppBarStyle = {
-    '&': { width: '5rem', padding: '0.5rem 0' },
-    '& .MuiContainer-root': { height: '100%', padding: 0 },
-    '& .MuiToolbar-root': {
-      flexDirection: 'column',
-      height: '100%',
-      padding: 0,
-    },
-  };
-
-  const topAppBarStyle = {
-    width: '100%',
-    padding: '0.2rem 0',
-  };
-  const appBarStyle = left ? leftAppBarStyle : topAppBarStyle;
-
   return (
     <AppBar
       position="static"
       sx={{
         backgroundColor: theme.navBackgroundColor,
-        ...appBarStyle,
+        width: '100%',
+        padding: '0.2rem 0',
       }}
     >
       <Container>

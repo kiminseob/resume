@@ -15,6 +15,34 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
+function Link({ name, to }) {
+  return (
+    <>
+      {to && (
+        <Typography
+          component="a"
+          variant="h6"
+          href={to}
+          sx={{ color: 'inherit', margin: '1rem 1rem 0 0' }}
+        >
+          {name}
+        </Typography>
+      )}
+    </>
+  );
+}
+
+function TypoItem({ title, contents }) {
+  return (
+    <>
+      <Typography variant="h6">{title}</Typography>
+      <Typography component="span" gutterBottom>
+        {contents}
+      </Typography>
+    </>
+  );
+}
+
 export default function ProjectDialog(props) {
   const { open, closeDialog, project } = props;
   const { title, gif, subtitle, feature, stack, demo, github } = project;
@@ -72,38 +100,15 @@ export default function ProjectDialog(props) {
               <li key={_feature}>{`- ${_feature}`}</li>
             ))}
           </Typography>
-          <Typography variant="h6">stack</Typography>
-          <Typography component="span" gutterBottom>
-            {stack}
-          </Typography>
-          <Box
-            sx={{
+          <TypoItem title="stack" contents={stack} />
+          <div
+            style={{
               display: 'flex',
             }}
           >
-            <Box
-              sx={{
-                marginRight: '1rem',
-              }}
-            >
-              <Typography
-                component="a"
-                variant="h6"
-                href={demo}
-                sx={{ color: 'inherit' }}
-              >
-                Demo
-              </Typography>
-            </Box>
-            <Typography
-              component="a"
-              variant="h6"
-              href={github}
-              sx={{ color: 'inherit' }}
-            >
-              Github
-            </Typography>
-          </Box>
+            <Link name="Demo" to={demo} />
+            <Link name="Github" to={github} />
+          </div>
         </DialogContent>
         <DialogActions>
           <Button onClick={closeDialog} autoFocus>

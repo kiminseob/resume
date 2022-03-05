@@ -36,21 +36,6 @@ const bottomNavStyle = (theme) => ({
   },
 });
 
-// const bottomNavStyle = (theme) => ({
-//   width: '100%',
-//   backgroundColor: theme.navBackgroundColor,
-//   '.MuiTabs-flexContainer': {
-//     justifyContent: 'space-evenly',
-//   },
-//   '& .MuiButtonBase-root': {
-//     textTransform: 'none',
-//     color: theme.navTxtColor,
-//     '&.Mui-selected': {
-//       color: theme.navTxtSelectedColor,
-//     },
-//   },
-// });
-
 function IconMenu() {
   const { pathname } = useLocation();
   const { GnbStore } = useStore();

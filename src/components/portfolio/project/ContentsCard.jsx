@@ -28,13 +28,15 @@ const muiPaperStyle = (theme) => ({
       height: '14rem',
     },
     [theme.breakpoints.between('mobile', 'tablet')]: {
-      height: 'fit',
-
+      width: '90%',
       '& .MuiCard-root': {
         flexDirection: 'column',
       },
       '& .MuiTypography-root': {
         marginBottom: '1rem',
+      },
+      '& .MuiCardMedia-root': {
+        width: '100%',
       },
     },
   },

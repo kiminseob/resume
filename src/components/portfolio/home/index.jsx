@@ -1,58 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
+import { useStore } from 'utils';
+import { observer } from 'mobx-react-lite';
 
 function Home() {
-  const canvasRef = useRef(null);
-  const contextRef = useRef(null);
-  const [ctx, setCtx] = useState();
-  const [isDrawing, setIsDrawing] = useState();
+  const { GnbStore } = useStore();
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    canvas.width = 700;
-    canvas.height = 700;
-
-    const context = canvas.getContext('2d');
-    context.strokeStyle = 'black';
-    context.lineWidth = 2.5;
-    context.fillStyle = 'white';
-    context.fillRect(0, 0, canvas.width, canvas.height);
-    contextRef.current = context;
-
-    setCtx(contextRef.current);
-  }, []);
-
-  const startDrawing = () => {
-    setIsDrawing(true);
-  };
-
-  const finishDrawing = () => {
-    setIsDrawing(false);
-  };
-
-  const drawing = ({ nativeEvent }) => {
-    const { offsetX, offsetY } = nativeEvent;
-
-    if (isDrawing) {
-      ctx.lineTo(offsetX, offsetY);
-      ctx.stroke();
-    } else {
-      ctx.beginPath();
-      ctx.moveTo(offsetX, offsetY);
-    }
-  };
+  const src = GnbStore.isKorean ? '/images/home.png' : '/images/home_en.png';
 
   return (
     <div className="home">
-      <canvas
-        ref={canvasRef}
-        onMouseDownCapture={startDrawing}
-        onMouseDown={drawing}
-        onMouseUp={finishDrawing}
-        onMouseMove={drawing}
-        onMouseLeave={finishDrawing}
-      />
+      <img alt="home" src={src} style={{ width: '100%' }} />
     </div>
   );
 }
 
-export default Home;
+export default observer(Home);
