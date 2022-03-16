@@ -1,0 +1,30 @@
+import React from 'react';
+import styled from 'styled-components';
+import { About, Career, Project } from 'components';
+
+const Container = styled.div`
+  padding: 2rem 0;
+`;
+
+const A4 = styled.div`
+  width: 700px;
+  height: 1024px;
+  margin: 3rem;
+  padding: 3.1rem;
+  border: 1px solid rgb(229, 229, 229);
+  font-size: 0.9rem;
+  margin: auto;
+`;
+
+function App() {
+  return (
+    <Container>
+      <A4>
+        <About />
+        <Career />
+      </A4>
+    </Container>
+  );
+}
+
+export default App;

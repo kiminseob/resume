@@ -1,7 +1,8 @@
 {
-  "compilerOptions": {
-    "baseUrl": "src",
-    "experimentalDecorators": true
-  },
-  "include": ["src"]
+    "compilerOptions": {
+        "baseUrl": "src"
+    },
+    "include": [
+        "src"
+    ]
 }
