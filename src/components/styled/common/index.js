@@ -2,9 +2,28 @@ import styled from 'styled-components';
 
 const SC = {};
 
+SC.Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+`;
+
+SC.MyInfo = styled.div`
+  font-size: 0.8rem;
+`;
+
+SC.Aside = styled.aside`
+  white-space: pre-line;
+  margin: 0.8rem 0;
+`;
+
 SC.H1 = styled.h1`
-  margin: 0;
+  margin: 0 0 1rem 0;
   font-size: 2rem;
+`;
+
+SC.Subject = styled.h1`
+  margin: 0 0 1rem 0;
+  font-size: 1.8rem;
 `;
 
 SC.Company = styled.h2`
@@ -18,13 +37,25 @@ SC.Job = styled.p`
   margin-bottom: 0.2rem;
 `;
 
-SC.ProjectName = styled.h3`
-  margin: 0;
-  font-size: 1rem;
+SC.RowHeader = styled.h3`
+  margin: 0.3rem 0 0 0;
+  font-size: 1.05rem;
 `;
 
 SC.Row = styled.div`
   display: flex;
+`;
+
+SC.FullRow = styled.div`
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+`;
+
+SC.Icon = styled.img`
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.5rem;
 `;
 
 SC.Column = styled.div`

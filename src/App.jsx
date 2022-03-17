@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { About, Career, Project } from 'components';
 
 const Container = styled.div`
-  padding: 2rem 0;
+  padding-top: 2rem;
 `;
 
 const A4 = styled.div`
@@ -18,12 +18,15 @@ const A4 = styled.div`
 
 function App() {
   return (
-    <Container>
-      <A4>
-        <About />
-        <Career />
-      </A4>
-    </Container>
+    <>
+      <Container>
+        <A4>
+          <About />
+          <Career />
+          <Project />
+        </A4>
+      </Container>
+    </>
   );
 }
 
