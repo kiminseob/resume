@@ -32,6 +32,39 @@ function Project() {
           </SC.Row>
         </SC.Column>
       </SC.Row>
+      <SC.Row>
+        <SC.Column>
+          <SC.Company>Movie List</SC.Company>
+        </SC.Column>
+        <SC.Column>
+          <SC.FullRow>
+            <SC.RowHeader>영화 목록 페이지</SC.RowHeader>
+            <SC.Row>
+              <a
+                href="https://github.com/kiminseob/react_movie_app"
+                target="_blank"
+              >
+                <SC.Icon src="icon/github.png" />
+              </a>
+              <a
+                href="https://kiminseob.github.io/movieql-client"
+                target="_blank"
+              >
+                <SC.Icon src="icon/expand.png" />
+              </a>
+              <a
+                href="https://kiminseob.github.io/react_movie_app"
+                target="_blank"
+              >
+                <SC.Icon src="icon/expand.png" />
+              </a>
+            </SC.Row>
+          </SC.FullRow>
+          <SC.Row>
+            <SC.Stack>React, javascript, GraphQL, Apollo React</SC.Stack>
+          </SC.Row>
+        </SC.Column>
+      </SC.Row>
     </section>
   );
 }
