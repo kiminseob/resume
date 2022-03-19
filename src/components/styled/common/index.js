@@ -50,6 +50,7 @@ SC.FullRow = styled.div`
   width: 30rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 SC.Icon = styled.img`

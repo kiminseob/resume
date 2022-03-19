@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { About, Career, Project } from 'components';
+import { About, Career, Project, Others } from 'components';
 
 const Container = styled.div`
   padding-top: 2rem;
@@ -24,6 +24,7 @@ function App() {
           <About />
           <Career />
           <Project />
+          <Others />
         </A4>
       </Container>
     </>
