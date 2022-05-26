@@ -22,6 +22,18 @@ function Others() {
               >
                 <SC.Icon src="icon/notion.png" />
               </a>
+              <a
+                href="https://canyon-honey-f8b.notion.site/LAST-BREAD-2019-02-2019-04-9db2593ec77b4b0a8b27576f0365f75b"
+                target="_blank"
+              >
+                <SC.Icon src="icon/notion.png" />
+              </a>
+              <a
+                href="https://canyon-honey-f8b.notion.site/2019-07-2019-09-5bb063ad7f1a4eda81301065ade2bed7"
+                target="_blank"
+              >
+                <SC.Icon src="icon/notion.png" />
+              </a>
             </SC.Row>
           </SC.FullRow>
           <SC.Row>
@@ -44,7 +56,7 @@ function Others() {
                 <SC.Icon src="icon/github.png" />
               </a>
               <a
-                href="https://canyon-honey-f8b.notion.site/2019-09-2019-10-11c60248222a4ae2b1d4af8dab73f9e3t"
+                href="https://canyon-honey-f8b.notion.site/2019-09-2019-10-57a930f39b704cd1bfcfa6647451130d"
                 target="_blank"
               >
                 <SC.Icon src="icon/notion.png" />
