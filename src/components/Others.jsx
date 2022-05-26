@@ -70,7 +70,28 @@ function Others() {
             </SC.Row>
           </SC.FullRow>
           <SC.Row>
-            <SC.Stack>javascript</SC.Stack>
+            <SC.Stack>express, javascript</SC.Stack>
+          </SC.Row>
+        </SC.Column>
+      </SC.Row>
+      <SC.Row>
+        <SC.Column>
+          <SC.Company></SC.Company>
+        </SC.Column>
+        <SC.Column>
+          <SC.FullRow>
+            <SC.RowHeader>react-multi-checkbox-tree</SC.RowHeader>
+            <SC.Row>
+              <a
+                href="https://www.npmjs.com/package/react-multi-checkbox-tree"
+                target="_blank"
+              >
+                <SC.Icon src="icon/npm.svg" />
+              </a>
+            </SC.Row>
+          </SC.FullRow>
+          <SC.Row>
+            <SC.Stack>react, typescript</SC.Stack>
           </SC.Row>
         </SC.Column>
       </SC.Row>
