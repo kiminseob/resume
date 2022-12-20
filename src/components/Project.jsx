@@ -67,7 +67,6 @@ function Project() {
           </SC.Column>
         </SC.Row>
       </section>
-      <SC.Divider />
     </>
   );
 }

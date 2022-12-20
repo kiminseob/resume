@@ -24,6 +24,8 @@ function App() {
           <About />
           <Career />
           <Project />
+        </A4>
+        <A4>
           <Others />
         </A4>
       </Container>
