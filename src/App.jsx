@@ -3,17 +3,21 @@ import styled from 'styled-components';
 import { About, Career, Project, Others } from 'components';
 
 const Container = styled.div`
-  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
 `;
 
 const A4 = styled.div`
   width: 700px;
   height: 1024px;
-  margin: 3rem;
   padding: 3.1rem;
   border: 1px solid rgb(229, 229, 229);
   font-size: 0.9rem;
-  margin: auto;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 `;
 
 function App() {
@@ -23,9 +27,9 @@ function App() {
         <A4>
           <About />
           <Career />
-          <Project />
         </A4>
         <A4>
+          <Project />
           <Others />
         </A4>
       </Container>

@@ -66,7 +66,44 @@ function Project() {
             </SC.Row>
           </SC.Column>
         </SC.Row>
+        <SC.Row>
+          <SC.Column>
+            <SC.Company>굿푸리</SC.Company>
+          </SC.Column>
+          <SC.Column>
+            <SC.FullRow>
+              <SC.RowHeader>우리 회사 근처 맛집 등록 (데모 링크)</SC.RowHeader>
+              <SC.Row>
+                <a href="https://goodfoodlist.inseop.pe.kr" target="_blank">
+                  <SC.Icon src="icon/expand.png" />
+                </a>
+              </SC.Row>
+            </SC.FullRow>
+            <SC.Row>
+              <SC.Stack>React, javascript, mobx</SC.Stack>
+            </SC.Row>
+          </SC.Column>
+        </SC.Row>
+        <SC.Row>
+          <SC.Column>
+            <SC.Company>포레스트짐</SC.Company>
+          </SC.Column>
+          <SC.Column>
+            <SC.FullRow>
+              <SC.RowHeader>PT샵 웹페이지 (데모 링크)</SC.RowHeader>
+              <SC.Row>
+                <a href="https://forestgym.inseop.pe.kr" target="_blank">
+                  <SC.Icon src="icon/expand.png" />
+                </a>
+              </SC.Row>
+            </SC.FullRow>
+            <SC.Row>
+              <SC.Stack>React, typescript, material-ui</SC.Stack>
+            </SC.Row>
+          </SC.Column>
+        </SC.Row>
       </section>
+      <SC.Divider />
     </>
   );
 }
