@@ -93,7 +93,7 @@ function Others() {
             </SC.Row>
           </SC.FullRow>
           <SC.Row>
-            <SC.Stack>Node.js, bixby</SC.Stack>
+            <SC.Stack>Java Android</SC.Stack>
           </SC.Row>
         </SC.Column>
       </SC.Row>

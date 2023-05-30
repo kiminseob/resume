@@ -80,7 +80,7 @@ function Project() {
               </SC.Row>
             </SC.FullRow>
             <SC.Row>
-              <SC.Stack>React, javascript, mobx</SC.Stack>
+              <SC.Stack>React, typescript, mobx</SC.Stack>
             </SC.Row>
           </SC.Column>
         </SC.Row>
