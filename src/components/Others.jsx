@@ -70,6 +70,35 @@ function Others() {
       </SC.Row>
       <SC.Row>
         <SC.Column>
+          <SC.Company></SC.Company>
+        </SC.Column>
+        <SC.Column>
+          <SC.FullRow>
+            <SC.RowHeader>
+              LG 스마트 씽큐 블루투스 센서를 활용한 앱 개발 공모전
+            </SC.RowHeader>
+            <SC.Row>
+              <a
+                href="https://github.com/kiminseob/LG-smart-ThinkQ"
+                target="_blank"
+              >
+                <SC.Icon src="icon/github.png" />
+              </a>
+              <a
+                href="https://canyon-honey-f8b.notion.site/Closet-Manager-2017-11-2017-12-f9d3f493fd1f41c694819878fc2818e7"
+                target="_blank"
+              >
+                <SC.Icon src="icon/notion.png" />
+              </a>
+            </SC.Row>
+          </SC.FullRow>
+          <SC.Row>
+            <SC.Stack>Node.js, bixby</SC.Stack>
+          </SC.Row>
+        </SC.Column>
+      </SC.Row>
+      <SC.Row>
+        <SC.Column>
           <SC.Company>npm 모듈</SC.Company>
         </SC.Column>
         <SC.Column>
