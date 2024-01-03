@@ -14,32 +14,40 @@ SC.MyInfo = styled.div`
 SC.Aside = styled.aside`
   white-space: pre-line;
   margin: 0.8rem 0;
+  font-size: 1.4rem;
 `;
 
 SC.H1 = styled.h1`
   margin: 0 0 1rem 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
+`;
+
+SC.Bold = styled.p`
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+`;
+
+SC.Description = styled.p`
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
 `;
 
 SC.Subject = styled.h1`
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0;
   font-size: 1.8rem;
 `;
 
 SC.Company = styled.h2`
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   width: 11rem;
-`;
-
-SC.Job = styled.p`
-  margin-top: 0.5rem;
-  margin-bottom: 0.2rem;
 `;
 
 SC.RowHeader = styled.h3`
   margin: 0.3rem 0 0 0;
-  font-size: 1.05rem;
+  font-size: 1.4rem;
 `;
 
 SC.Row = styled.div`
@@ -65,7 +73,7 @@ SC.Column = styled.div`
 `;
 
 SC.Stack = styled.i`
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: -0.3px;
   line-height: 2;
   color: gray;
@@ -77,13 +85,39 @@ SC.Divider = styled.div`
   margin: 2rem 0;
 `;
 
+SC.Wrapper = styled.div`
+  margin-bottom: 0.5rem;
+`;
+
+SC.RowDivider = styled.div`
+  background-color: #f1f3f5;
+  height: 2px;
+  margin: 1rem 0;
+`;
+
 SC.List = styled.li`
+  font-size: 1rem;
   list-style-type: '• ';
+  font-weight: 600;
+  min-width: fit-content;
 `;
 
 SC.MarkerList = styled.li`
   list-style-type: '✓ ';
   margin-left: 0.7rem;
+  font-weight: 400;
+`;
+
+SC.DividerList = styled.li`
+  list-style-type: '- ';
+  margin-left: 0.7rem;
+  font-weight: 400;
+`;
+
+SC.DotList = styled.li`
+  list-style-type: '• ';
+  margin-left: 0.7rem;
+  font-weight: 400;
 `;
 
 export default SC;

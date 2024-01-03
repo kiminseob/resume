@@ -11,7 +11,7 @@ function Others() {
         </SC.Column>
         <SC.Column>
           <SC.FullRow>
-            <SC.RowHeader>AI 음성 스피커 서비스 개발 공모전</SC.RowHeader>
+            <SC.RowHeader>AI 음성 스피커 서비스 개발</SC.RowHeader>
             <SC.Row>
               <a href="https://github.com/kiminseob/skyti" target="_blank">
                 <SC.Icon src="icon/github.png" />
@@ -47,7 +47,7 @@ function Others() {
         </SC.Column>
         <SC.Column>
           <SC.FullRow>
-            <SC.RowHeader>빅스비 캡슐 챌린지 공모전</SC.RowHeader>
+            <SC.RowHeader>빅스비 캡슐 챌린지</SC.RowHeader>
             <SC.Row>
               <a
                 href="https://github.com/revoiceStudio/private_bixby"
@@ -75,7 +75,7 @@ function Others() {
         <SC.Column>
           <SC.FullRow>
             <SC.RowHeader>
-              LG 스마트 씽큐 블루투스 센서를 활용한 앱 개발 공모전
+              LG 스마트 블루투스 센서를 활용한 앱 개발
             </SC.RowHeader>
             <SC.Row>
               <a

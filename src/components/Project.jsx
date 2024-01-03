@@ -5,7 +5,7 @@ function Project() {
   return (
     <>
       <section>
-        <SC.Subject>사이드 프로젝트</SC.Subject>
+        <SC.Subject>개인 프로젝트</SC.Subject>
         <SC.Row>
           <SC.Column>
             <SC.Company>To-Do List</SC.Company>
