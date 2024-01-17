@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "cp dist/index.html dist/404.html && gh-pages -d dist"
   },
-  "homepage": "https://kiminseob.github.io/portfolio/",
+  "homepage": "https://kiminseob.github.io/portfolio",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kiminseob/portfolio.git"
