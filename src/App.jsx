@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { About, Career1, Career2, Project, Others } from 'components';
-import { BrowserRouter } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
@@ -23,21 +22,19 @@ const A4 = styled.div`
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Container>
-        <A4>
-          <About />
-          <Career1 />
-        </A4>
-        <A4>
-          <Career2 />
-        </A4>
-        <A4>
-          <Project />
-          <Others />
-        </A4>
-      </Container>
-    </BrowserRouter>
+    <Container>
+      <A4>
+        <About />
+        <Career1 />
+      </A4>
+      <A4>
+        <Career2 />
+      </A4>
+      <A4>
+        <Project />
+        <Others />
+      </A4>
+    </Container>
   );
 }
 
