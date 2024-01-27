@@ -7,7 +7,13 @@ import './css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter
+      basename={
+        process.env.NODE_ENV === 'development'
+          ? '/'
+          : process.env.REACT_APP_PUBLIC_URL
+      }
+    >
       <App />
     </BrowserRouter>
   </React.StrictMode>,

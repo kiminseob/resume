@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { About, Career1, Career2, Project, Others } from 'components';
+import { Routes, Route } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
@@ -21,19 +22,26 @@ const A4 = styled.div`
 
 function App() {
   return (
-    <Container>
-      <A4>
-        <About />
-        <Career1 />
-      </A4>
-      <A4>
-        <Career2 />
-      </A4>
-      <A4>
-        <Project />
-        <Others />
-      </A4>
-    </Container>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Container>
+            <A4>
+              <About />
+              <Career1 />
+            </A4>
+            <A4>
+              <Career2 />
+            </A4>
+            <A4>
+              <Project />
+              <Others />
+            </A4>
+          </Container>
+        }
+      />
+    </Routes>
   );
 }
 
