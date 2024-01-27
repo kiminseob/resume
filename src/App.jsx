@@ -25,7 +25,7 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/"
+        path="/*"
         element={
           <Container>
             <A4>

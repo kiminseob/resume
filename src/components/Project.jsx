@@ -6,6 +6,7 @@ function Project() {
     <>
       <section>
         <SC.Subject>개인 프로젝트</SC.Subject>
+        <SC.Aside>연습</SC.Aside>
         <SC.Row>
           <SC.Column>
             <SC.Company>To-Do List</SC.Company>
@@ -66,19 +67,26 @@ function Project() {
             </SC.Row>
           </SC.Column>
         </SC.Row>
+        <SC.Aside>취미</SC.Aside>
         <SC.Row>
           <SC.Column>
             <SC.Company>굿푸리</SC.Company>
           </SC.Column>
           <SC.Column>
             <SC.FullRow>
-              <SC.RowHeader>우리 회사 근처 맛집 등록 (데모 링크)</SC.RowHeader>
+              <SC.RowHeader>회사 근처 맛집 등록 사이트</SC.RowHeader>
               <SC.Row>
                 <a href="https://goodfoodlist.inseop.pe.kr" target="_blank">
                   <SC.Icon src="icon/expand.png" />
                 </a>
               </SC.Row>
             </SC.FullRow>
+            <SC.Row>
+              <SC.Description>
+                팀에서 회식할 때 가는 음식점에 대한 평가를 남기고 사용한 비용
+                등을 기록하기 위해 만들었습니다.
+              </SC.Description>
+            </SC.Row>
             <SC.Row>
               <SC.Stack>React, typescript, mobx</SC.Stack>
             </SC.Row>
@@ -90,7 +98,7 @@ function Project() {
           </SC.Column>
           <SC.Column>
             <SC.FullRow>
-              <SC.RowHeader>PT샵 웹페이지 (데모 링크)</SC.RowHeader>
+              <SC.RowHeader>PT샵 웹 페이지</SC.RowHeader>
               <SC.Row>
                 <a href="https://forestgym.inseop.pe.kr" target="_blank">
                   <SC.Icon src="icon/expand.png" />
@@ -98,12 +106,17 @@ function Project() {
               </SC.Row>
             </SC.FullRow>
             <SC.Row>
+              <SC.Description>
+                친구가 운영하는 1:1 pt샵의 웹 사이트를 만들어주기 위해 개발하고
+                있습니다.
+              </SC.Description>
+            </SC.Row>
+            <SC.Row>
               <SC.Stack>React, typescript, material-ui</SC.Stack>
             </SC.Row>
           </SC.Column>
         </SC.Row>
       </section>
-      <SC.Divider />
     </>
   );
 }
