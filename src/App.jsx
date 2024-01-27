@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { About, Career1, Career2, Project, Others } from 'components';
 import { Routes, Route } from 'react-router-dom';
+import Career3 from 'components/Career/Career3';
 
 const Container = styled.div`
   display: flex;
@@ -35,7 +36,10 @@ function App() {
               <Career2 />
             </A4>
             <A4>
+              <Career3 />
               <Project />
+            </A4>
+            <A4>
               <Others />
             </A4>
           </Container>

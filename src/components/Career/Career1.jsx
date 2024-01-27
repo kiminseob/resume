@@ -10,57 +10,65 @@ function Career1() {
           <SC.Company>티맥스소프트</SC.Company>
           <SC.Description>프론트엔드 개발자</SC.Description>
           <p>(2021.08.01 ~ 재직중)</p>
+          <p>- 약 2년 6개월</p>
         </SC.Column>
         <SC.Column>
           <SC.Row>
-            <SC.RowHeader>통합 미들웨어 플랫폼 SFM Admin 페이지</SC.RowHeader>
-          </SC.Row>
-          <SC.Row>
-            <SC.Stack>React, ES6, Mobx, Material UI, React Query</SC.Stack>
-          </SC.Row>
-          <SC.Row>
-            <ul>
-              <SC.Wrapper>
-                <SC.List>
-                  담당 업무
-                  <SC.MarkerList>
-                    자사 WAS 제품 JEUS Admin 페이지를 개발하고 있습니다.
-                  </SC.MarkerList>
-                </SC.List>
-              </SC.Wrapper>
-
-              <SC.Wrapper>
-                <SC.List>
-                  개발 기간<SC.MarkerList>21.09 ~ 진행중</SC.MarkerList>
-                </SC.List>
-              </SC.Wrapper>
-
-              <SC.Wrapper>
-                <SC.List>
-                  개발 내용
-                  <SC.MarkerList>
-                    서버, 클러스터, 도메인 설정 등 설정 관리 페이지 개발
-                  </SC.MarkerList>
-                  <SC.MarkerList>어드민 계정 관리 페이지</SC.MarkerList>
-                  <SC.MarkerList>
-                    애플리케이션 배포 관리 페이지 개발
-                  </SC.MarkerList>
-                  <SC.MarkerList>히스토리 관리 페이지 개발</SC.MarkerList>
-                </SC.List>
-              </SC.Wrapper>
-              <SC.List>
-                성과
-                <SC.MarkerList>
-                  22.12{' '}
-                  <a
-                    href="https://sw.tta.or.kr/product/prod_gsce_view.jsp?num=7477&pa=b3e4fdbb778cf9770a52cd9ddecb59881c927fbecc786f8674cb6e59275104ac043f63cf10207b98d3aa5c5207798e22https://sw.tta.or.kr/product/prod_gsce_view.jsp?num=7477&pa=b3e4fdbb778cf9770a52cd9ddecb59881c927fbecc786f8674cb6e59275104ac043f63cf10207b98d3aa5c5207798e22"
-                    target="_blank"
-                  >
-                    GS인증 1등급
-                  </a>
-                </SC.MarkerList>
-              </SC.List>
-            </ul>
+            <SC.Column>
+              <SC.Row>
+                <SC.RowHeader>
+                  Tmaxsoft SaaS Platform(TSP) 포털 사이트 개발 및 프론트 리딩
+                </SC.RowHeader>
+              </SC.Row>
+              <SC.Row>
+                <SC.Stack>
+                  Next.js, Typescript, Recoil, React Query, Styled, Material
+                </SC.Stack>
+              </SC.Row>
+              <SC.Row>
+                <ul>
+                  <SC.Wrapper>
+                    <SC.List>
+                      프로젝트 소개
+                      <SC.MarkerList>
+                        TSP는 국내 시장 점유율 1위 미들웨어 제품인 JEUS,
+                        WebtoB를 SaaS로 제공하여 고객들이 손쉽게 비즈니스 환경을
+                        구축할 수 있도록 도와주는 온라인 플랫폼 입니다.
+                      </SC.MarkerList>
+                    </SC.List>
+                  </SC.Wrapper>
+                  <SC.Wrapper>
+                    <SC.List>
+                      담당 업무
+                      <SC.MarkerList>
+                        SaaS 포털 사이트의 전반적인 화면 개발을 담당하고 있으며
+                        프론트엔드를 리딩하고 있습니다.
+                      </SC.MarkerList>
+                    </SC.List>
+                  </SC.Wrapper>
+                  <SC.Wrapper>
+                    <SC.List>
+                      개발 기간
+                      <SC.MarkerList>2023.08 ~ 진행중</SC.MarkerList>
+                    </SC.List>
+                  </SC.Wrapper>
+                  <SC.Wrapper>
+                    <SC.List>
+                      개발 내용
+                      <SC.MarkerList>
+                        프로젝트 및 서비스 관리 페이지
+                      </SC.MarkerList>
+                      <SC.MarkerList>
+                        회원정보, 결제, 요금 조회 관리 페이지
+                      </SC.MarkerList>
+                      <SC.MarkerList>
+                        SSO keycloak 사용한 인증, 인가
+                      </SC.MarkerList>
+                    </SC.List>
+                  </SC.Wrapper>
+                </ul>
+              </SC.Row>
+            </SC.Column>
           </SC.Row>
         </SC.Column>
       </SC.Row>

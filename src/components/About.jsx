@@ -31,7 +31,7 @@ function About() {
       <SC.Column>
         <SC.Bold>총 경력</SC.Bold>
         <SC.Stack>
-          티맥스소프트 / 프론트엔드 개발자 (2021.08.01 ~ 재직중)
+          티맥스소프트 / 프론트엔드 개발자 (2021.08.01 ~ 재직중) - 약 2년 6개월
         </SC.Stack>
       </SC.Column>
 
@@ -50,7 +50,7 @@ function About() {
             <SC.Row style={{ alignItems: 'center' }}>라이브러리</SC.Row>
             <SC.Stack>
               <SC.MarkerList>
-                React, Mobx, Recoil, React Query, styled-components, Material UI
+                React.js, Mobx, Recoil, React Query, Styled, Material
               </SC.MarkerList>
             </SC.Stack>
           </SC.Row>
