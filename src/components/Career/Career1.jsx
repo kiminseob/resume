@@ -41,8 +41,10 @@ function Career1() {
                     <SC.List>
                       <SC.Wrapper>담당 업무</SC.Wrapper>
                       <SC.MarkerList>
-                        SaaS 포털 사이트의 전반적인 화면 개발을 담당하고
-                        있습니다.
+                        SaaS 포털 사이트에서 사용자가 카탈로그를 생성해 서버
+                        환경을 손쉽게 구축할 수 있도록 하는 전반적인 UI 프로세스
+                        개발을 담당하고 있습니다. 프로젝트 초기 구조를 잡았으며
+                        인증/인가 및 사이트 주요 기능을 담당 중입니다.
                       </SC.MarkerList>
                     </SC.List>
                   </SC.Wrapper>

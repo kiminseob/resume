@@ -36,8 +36,7 @@ function Career2() {
                 <SC.List>
                   <SC.Wrapper>담당 업무</SC.Wrapper>
                   <SC.MarkerList>
-                    JEUS와 관련된 여러 설정을 하고 상태를 확인할 수 있는 Admin
-                    페이지를 개발했습니다.
+                    JEUS 설정을 관리하는 Admin 페이지를 담당했습니다.
                   </SC.MarkerList>
                 </SC.List>
               </SC.Wrapper>
@@ -53,8 +52,8 @@ function Career2() {
                 <SC.List>
                   <SC.Wrapper>개발 내용</SC.Wrapper>
                   <SC.MarkerList>
-                    서버, 클러스터, 도메인 설정 등 전반적인 설정 관리 페이지
-                    개발
+                    서버, 클러스터, 도메인 설정 등 전반적인 JEUS 설정 관리
+                    페이지 개발
                   </SC.MarkerList>
                   <SC.MarkerList>어드민 계정 관리 페이지</SC.MarkerList>
                   <SC.MarkerList>
@@ -66,13 +65,12 @@ function Career2() {
               <SC.List>
                 <SC.Wrapper>성과</SC.Wrapper>
                 <SC.MarkerList>
-                  멀티 체크 트리 라이브러리를 배포해 해당 라이브러리를 활용하는
-                  페이지 개발의 생산성 기여
+                  멀티 체크 트리 라이브러리를 배포해 권한 관리 로직에 적용, 그와
+                  관련된 페이지 개발에 생산성 기여
                 </SC.MarkerList>
                 <SC.MarkerList>
-                  gitlab 개발 브랜치와 Jenkins CI/CD 서버를 별도로 구축하여
-                  팀원들이 각자 개발 환경을 세팅하는 비효율적인 기존의 프로세스
-                  개선
+                  gitlab 개발 브랜치와 Jenkins 서버 구축 및 연동, 팀원들이 각자
+                  개발 환경을 세팅하는 비효율적인 기존의 프로세스 개선
                 </SC.MarkerList>
                 <SC.MarkerList>
                   1000개가 넘는 사내 디자인 시스템 아이콘을 다운받아 react
@@ -109,8 +107,9 @@ function Career2() {
                 <SC.List>
                   <SC.Wrapper>담당 업무</SC.Wrapper>
                   <SC.MarkerList>
-                    SFM 프로젝트로부터 clone 하여 오픈소스 미들웨어에 맞는
-                    구조로 커스터마이징 및 고도화 하는 업무를 담당했습니다.
+                    SFM 프로젝트로부터 clone 하여 오픈소스 미들웨어(Apache,
+                    Nginx, Wildfly, Tomcat)에 맞는 구조로 커스터마이징 및 고도화
+                    하는 업무를 담당했습니다.
                   </SC.MarkerList>
                 </SC.List>
                 <SC.Wrapper>
