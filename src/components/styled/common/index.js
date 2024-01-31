@@ -105,6 +105,7 @@ SC.List = styled.li`
 SC.MarkerList = styled.li`
   list-style-type: '✓ ';
   margin-left: 0.7rem;
+  margin-bottom: 0.5rem;
   font-weight: 400;
 `;
 

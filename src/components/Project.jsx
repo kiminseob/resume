@@ -4,9 +4,10 @@ import SC from './styled/common';
 function Project() {
   return (
     <>
+      <SC.Divider />
       <section>
         <SC.Subject>개인 프로젝트</SC.Subject>
-        <SC.Aside>연습</SC.Aside>
+        {/* <SC.Aside>연습</SC.Aside>
         <SC.Row>
           <SC.Column>
             <SC.Company>To-Do List</SC.Company>
@@ -66,8 +67,8 @@ function Project() {
               <SC.Stack>React, javascript, GraphQL, Apollo React</SC.Stack>
             </SC.Row>
           </SC.Column>
-        </SC.Row>
-        <SC.Aside>취미</SC.Aside>
+        </SC.Row> */}
+        {/* <SC.Aside>사이드 프로젝트</SC.Aside> */}
         <SC.Row>
           <SC.Column>
             <SC.Company>굿푸리</SC.Company>
@@ -83,8 +84,8 @@ function Project() {
             </SC.FullRow>
             <SC.Row>
               <SC.Description>
-                팀에서 회식할 때 가는 음식점에 대한 평가를 남기고 사용한 비용
-                등을 기록하기 위해 만들었습니다.
+                팀회식 때 갔던 음식점에 대해서 평가를 남기고 사용한 비용 등을
+                기록하는 사이트 입니다.
               </SC.Description>
             </SC.Row>
             <SC.Row>
@@ -116,6 +117,7 @@ function Project() {
             </SC.Row>
           </SC.Column>
         </SC.Row>
+        <SC.Divider />
       </section>
     </>
   );

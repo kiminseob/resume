@@ -1,8 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { About, Career1, Career2, Project, Others } from 'components';
+import {
+  About,
+  Career1,
+  Career2,
+  Career3,
+  Project,
+  Others1,
+  Others2,
+  Others3,
+} from 'components';
 import { Routes, Route } from 'react-router-dom';
-import Career3 from 'components/Career/Career3';
 
 const Container = styled.div`
   display: flex;
@@ -12,13 +20,9 @@ const Container = styled.div`
 
 const A4 = styled.div`
   width: 700px;
-  height: 1024px;
   padding: 3.1rem;
-  border: 1px solid rgb(229, 229, 229);
+  /* border: 1px solid rgb(229, 229, 229); */
   font-size: 0.9rem;
-  &:not(:last-child) {
-    /* margin-bottom: 2rem; */
-  }
 `;
 
 function App() {
@@ -30,17 +34,8 @@ function App() {
           <Container>
             <A4>
               <About />
-              <Career1 />
-            </A4>
-            <A4>
-              <Career2 />
-            </A4>
-            <A4>
-              <Career3 />
-              <Project />
-            </A4>
-            <A4>
-              <Others />
+              <Career1 /> <Career2 /> <Career3 /> <Project />
+              <Others1 /> <Others2 /> <Others3 />
             </A4>
           </Container>
         }

@@ -29,37 +29,34 @@ function About() {
       </SC.Aside>
       <SC.Divider />
       <SC.Column>
-        <SC.Bold>총 경력</SC.Bold>
-        <SC.Stack>
-          티맥스소프트 / 프론트엔드 개발자 (2021.08.01 ~ 재직중) - 약 2년 6개월
-        </SC.Stack>
+        <SC.Bold>총 경력 (3년 4개월)</SC.Bold>
+        <SC.Description>
+          티맥스소프트 / 프론트엔드 개발자 (2021.08.01 ~ 재직중) - 2년 6개월
+        </SC.Description>
+        <SC.Description>
+          리보이스 / 백엔드 개발자 (2019.09 ~ 2020.06) - 10개월
+        </SC.Description>
       </SC.Column>
-
+      <SC.Wrapper />
       <SC.Column>
         <SC.Bold>기술 스택</SC.Bold>
         <SC.Wrapper>
           <SC.Row>
             <SC.Row style={{ alignItems: 'center' }}>개발 언어</SC.Row>
-            <SC.Stack>
-              <SC.MarkerList>Typescript, ES6, HTML, CSS</SC.MarkerList>
-            </SC.Stack>
+            <SC.MarkerList>Typescript, ES6, HTML, CSS</SC.MarkerList>
           </SC.Row>
         </SC.Wrapper>
         <SC.Wrapper>
           <SC.Row>
             <SC.Row style={{ alignItems: 'center' }}>라이브러리</SC.Row>
-            <SC.Stack>
-              <SC.MarkerList>
-                React.js, Mobx, Recoil, React Query, Styled, Material
-              </SC.MarkerList>
-            </SC.Stack>
+            <SC.MarkerList>
+              React.js, Mobx, Recoil, React Query, Styled, Material
+            </SC.MarkerList>
           </SC.Row>
         </SC.Wrapper>
         <SC.Row>
           <SC.Row style={{ alignItems: 'center' }}>프레임워크</SC.Row>
-          <SC.Stack>
-            <SC.MarkerList>Next.js</SC.MarkerList>
-          </SC.Stack>
+          <SC.MarkerList>Next.js</SC.MarkerList>
         </SC.Row>
       </SC.Column>
 
