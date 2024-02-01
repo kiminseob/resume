@@ -42,21 +42,20 @@ function About() {
         <SC.Bold>기술 스택</SC.Bold>
         <SC.Wrapper>
           <SC.Row>
-            <SC.Row style={{ alignItems: 'center' }}>개발 언어</SC.Row>
-            <SC.MarkerList>Typescript, ES6, HTML, CSS</SC.MarkerList>
+            <SC.Row style={{ alignItems: 'center' }}>
+              개발 언어 : Typescript, ES6, HTML, CSS
+            </SC.Row>
           </SC.Row>
         </SC.Wrapper>
         <SC.Wrapper>
           <SC.Row>
-            <SC.Row style={{ alignItems: 'center' }}>라이브러리</SC.Row>
-            <SC.MarkerList>
-              React.js, Mobx, Recoil, React Query, Styled, Material
-            </SC.MarkerList>
+            <SC.Row style={{ alignItems: 'center' }}>
+              라이브러리 : React.js, Mobx, Recoil, React Query, Styled, Material
+            </SC.Row>
           </SC.Row>
         </SC.Wrapper>
         <SC.Row>
-          <SC.Row style={{ alignItems: 'center' }}>프레임워크</SC.Row>
-          <SC.MarkerList>Next.js</SC.MarkerList>
+          <SC.Row style={{ alignItems: 'center' }}>프레임워크 : Next.js</SC.Row>
         </SC.Row>
       </SC.Column>
 

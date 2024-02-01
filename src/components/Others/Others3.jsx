@@ -86,6 +86,11 @@ function Others3() {
             </a>
           </SC.DotList>
         </SC.Wrapper>
+        <SC.Wrapper>
+          <SC.DotList>
+            <a href="https://youtu.be/BJPQihWuj9E">SKT NUGU 개발 인터뷰</a>
+          </SC.DotList>
+        </SC.Wrapper>
       </SC.Column>
     </section>
   );

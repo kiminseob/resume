@@ -66,7 +66,7 @@ function Career2() {
                 <SC.Wrapper>성과</SC.Wrapper>
                 <SC.MarkerList>
                   멀티 체크 트리 라이브러리를 배포해 권한 관리 로직에 적용, 그와
-                  관련된 페이지 개발에 생산성 기여
+                  관련된 페이지 개발 생산성 기여
                 </SC.MarkerList>
                 <SC.MarkerList>
                   gitlab 개발 브랜치와 Jenkins 서버 구축 및 연동, 팀원들이 각자
@@ -129,7 +129,7 @@ function Career2() {
                   <SC.Wrapper>성과</SC.Wrapper>
                   <SC.MarkerList>
                     gitlab과 Jenkins 연동을 통한 CI/CD 구축 및 오픈소스(Apache,
-                    Nginx, Wildfly, Tomcat) 연동하여 별도의 개발 서버 세팅.
+                    Nginx, Wildfly, Tomcat)를 연동하여 별도의 개발 서버 세팅.
                     팀원들의 번거로운 개발 환경 세팅 및 배포 시간 단축
                   </SC.MarkerList>
                   <SC.MarkerList>
