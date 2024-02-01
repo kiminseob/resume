@@ -9,6 +9,7 @@ function Others2() {
           <SC.Company>라이브러리</SC.Company>
         </SC.Column>
         <SC.Column>
+          <SC.RowDivider />
           <SC.FullRow>
             <SC.RowHeader>nugu-kit</SC.RowHeader>
             <SC.Row>

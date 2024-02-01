@@ -12,15 +12,18 @@ function Others3() {
           </SC.Wrapper>
           <SC.Wrapper>
             <SC.Row>
-              <SC.DotList>적극적인 의사소통을 위해 노력합니다.</SC.DotList>
+              <SC.DotList>건강한 소통을 위해 노력합니다.</SC.DotList>
+            </SC.Row>
+            <SC.Row>
+              <SC.DotList>상대에게 맞출 수 있습니다.</SC.DotList>
+            </SC.Row>
+            <SC.Row>
+              <SC.DotList>솔직하지만 부드럽게 의견을 표출합니다.</SC.DotList>
             </SC.Row>
             <SC.Row>
               <SC.DotList>
-                일적인 것 이외의 사담도 조금은 필요하다고 생각합니다.
+                동료와 친밀한 관계를 형성하고 공감하기 위해 노력합니다.
               </SC.DotList>
-            </SC.Row>
-            <SC.Row>
-              <SC.DotList>인간 관계에 유연합니다.</SC.DotList>
             </SC.Row>
           </SC.Wrapper>
         </SC.Column>
@@ -32,7 +35,9 @@ function Others3() {
           </SC.Wrapper>
           <SC.Wrapper>
             <SC.Row>
-              <SC.DotList>기본적으로 JS, TS의 사용에 자신 있습니다.</SC.DotList>
+              <SC.DotList>
+                기본적인 Javascript 및 Typescript 사용에 자신 있습니다.
+              </SC.DotList>
             </SC.Row>
             <SC.Row>
               <SC.DotList>최신 ES 문법을 잘 알고 있습니다.</SC.DotList>
@@ -52,10 +57,15 @@ function Others3() {
               </SC.DotList>
             </SC.Row>
             <SC.Row>
-              <SC.DotList>상태는 꼭 필요할 경우에만 사용합니다.</SC.DotList>
+              <SC.DotList>
+                useState, useCallback, useMemo는 꼭 필요한 경우에만 사용합니다.
+              </SC.DotList>
             </SC.Row>
             <SC.Row>
               <SC.DotList>렌더링 과정을 이해하고 있습니다.</SC.DotList>
+            </SC.Row>
+            <SC.Row>
+              <SC.DotList>CSR, SSR의 차이를 잘 알고 있습니다.</SC.DotList>
             </SC.Row>
           </SC.Wrapper>
         </SC.Column>
