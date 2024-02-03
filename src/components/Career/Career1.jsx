@@ -9,8 +9,8 @@ function Career1() {
         <SC.Column>
           <SC.Company>티맥스소프트</SC.Company>
           <SC.Description>프론트엔드 개발자</SC.Description>
-          <p>(2021.08.01 ~ 재직중)</p>
-          <p>- 약 2년 6개월</p>
+          <SC.Description>(21.08.01 ~ 재직중)</SC.Description>
+          <SC.Description>- 약 2년 6개월</SC.Description>
         </SC.Column>
         <SC.Column>
           <SC.Row>

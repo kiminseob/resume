@@ -11,6 +11,9 @@ function About() {
         </SC.H1>
         <SC.MyInfo>
           <div>
+            <SC.Stack>이력서 업데이트. 24.02.03 </SC.Stack>
+          </div>
+          <div>
             <strong>Github: </strong>
             <a href="https://github.com/kiminseob" target="_blank">
               kiminseob
@@ -39,26 +42,30 @@ function About() {
       </SC.Column>
       <SC.Wrapper />
       <SC.Column>
-        <SC.Bold>기술 스택</SC.Bold>
+        <SC.Bold>주요 기술</SC.Bold>
         <SC.Wrapper>
           <SC.Row>
             <SC.Row style={{ alignItems: 'center' }}>
-              언어 : Typescript, HTML, CSS
+              <SC.Description>언어 : Typescript, HTML, CSS</SC.Description>
             </SC.Row>
           </SC.Row>
         </SC.Wrapper>
         <SC.Wrapper>
           <SC.Row>
             <SC.Row style={{ alignItems: 'center' }}>
-              라이브러리 : React.js, Mobx, Recoil, React Query, Styled, Material
+              <SC.Description>
+                라이브러리 : React.js, Mobx, Recoil, React Query, Styled,
+                Material
+              </SC.Description>
             </SC.Row>
           </SC.Row>
         </SC.Wrapper>
         <SC.Row>
-          <SC.Row style={{ alignItems: 'center' }}>프레임워크 : Next.js</SC.Row>
+          <SC.Row style={{ alignItems: 'center' }}>
+            <SC.Description>프레임워크 : Next.js</SC.Description>
+          </SC.Row>
         </SC.Row>
       </SC.Column>
-
       <SC.Divider />
     </>
   );

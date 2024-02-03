@@ -14,8 +14,8 @@ function Career3() {
         <SC.Column>
           <SC.Company>리보이스</SC.Company>
           <SC.Description>개발팀장 / 백엔드 개발자</SC.Description>
-          <p>(2019.09.01 ~ 2020.06.30)</p>
-          <p>- 약 10개월</p>
+          <SC.Description>(19.09.01 ~ 20.06.30)</SC.Description>
+          <SC.Description>- 약 10개월</SC.Description>
         </SC.Column>
         <SC.Column>
           <SC.Row>
