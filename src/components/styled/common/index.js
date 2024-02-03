@@ -30,7 +30,7 @@ SC.Bold = styled.p`
 `;
 
 SC.Description = styled.p`
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   margin-top: 0.5rem;
   margin-bottom: 0.2rem;
 `;
@@ -103,7 +103,7 @@ SC.List = styled.li`
 `;
 
 SC.MarkerList = styled.li`
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   list-style-type: '✓ ';
   margin-left: 0.7rem;
   margin-bottom: 0.5rem;
@@ -114,14 +114,14 @@ SC.DividerList = styled.li`
   list-style-type: '- ';
   margin-left: 0.7rem;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 `;
 
 SC.DotList = styled.li`
   list-style-type: '• ';
   margin-left: 0.7rem;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 `;
 
 export default SC;
