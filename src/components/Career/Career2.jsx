@@ -65,8 +65,9 @@ function Career2() {
               <SC.List>
                 <SC.Wrapper>성과</SC.Wrapper>
                 <SC.MarkerList>
-                  멀티 체크 트리 라이브러리를 배포해 권한 관리 로직에 적용, 그와
-                  관련된 페이지 개발 생산성 기여
+                  <a href="#multi-check-tree">멀티 체크 트리 라이브러리</a>를
+                  배포해 권한 관리 로직에 적용, 그와 관련된 페이지 개발 생산성
+                  기여
                 </SC.MarkerList>
                 <SC.MarkerList>
                   gitlab 개발 브랜치와 Jenkins 서버 구축 및 연동, 팀원들이 각자

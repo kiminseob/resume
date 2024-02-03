@@ -44,7 +44,7 @@ function Career3() {
                 <SC.List>
                   <SC.Wrapper>담당 업무</SC.Wrapper>
                   <SC.MarkerList>
-                    항공권 음성 검색 프로세스를 설계하고 주요 비즈니스 로직을
+                    음성 검색 프로세스를 설계하고 주요 비즈니스 로직을
                     담당했습니다.
                   </SC.MarkerList>
                 </SC.List>
@@ -61,22 +61,13 @@ function Career3() {
                 <SC.Wrapper>성과</SC.Wrapper>
                 <SC.MarkerList>
                   2020.09 롯데제이티비, 한진관광 NUGU play 앱 런칭 및 항공권
-                  검색 사이트 유입률 증대
+                  검색 사이트 유입률 증가에 기여
                 </SC.MarkerList>
                 <SC.MarkerList>
-                  한국정보통신학회 원고(음성 인터페이스를 활용한 AI 대화형
-                  항공권 검색 시스템 개발) 작성을 통해 자연스러운 대화형 음성
-                  서비스를 제공하는 기반을 마련
-                </SC.MarkerList>
-                <SC.MarkerList>
-                  <a
-                    href="https://www.npmjs.com/package/javascript-state-machine"
-                    target="_blank"
-                  >
-                    javascript-state-machine
-                  </a>
-                  을 도입해 사용자의 발화 상태 관리에 대한 유지보수, 확장성,
-                  에러 관리 등 주요 로직 개선
+                  음성 인터페이스를 활용한 AI 대화형 항공권 검색 시스템 개발{' '}
+                  <a href="#manuscript">KIICE 원고</a>
+                  작성을 통해 자연스러운 대화형 음성 서비스를 제공하는 기반을
+                  마련
                 </SC.MarkerList>
               </SC.List>
             </ul>

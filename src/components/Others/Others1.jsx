@@ -4,7 +4,7 @@ import SC from '../styled/common';
 function Others1() {
   return (
     <section>
-      <SC.Subject>기타</SC.Subject>
+      {/* <SC.Subject>기타</SC.Subject> */}
       <SC.Row>
         <SC.Column>
           <SC.Company>수상</SC.Company>

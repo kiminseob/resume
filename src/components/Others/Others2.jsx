@@ -34,7 +34,7 @@ function Others2() {
         <SC.Column>
           <SC.Company></SC.Company>
         </SC.Column>
-        <SC.Column>
+        <SC.Column id="multi-check-tree">
           <SC.FullRow>
             <SC.RowHeader>react-multi-checkbox-tree</SC.RowHeader>
             <SC.Row>
@@ -52,7 +52,7 @@ function Others2() {
           <SC.Row>
             <SC.Description>
               멀티 체크 박스 트리는 각 트리들이 필요로 하는 여러가지 상태를
-              손쉽게 관리할 수 있도록 도와줍니다.
+              관리할 수 있도록 도와줍니다.
             </SC.Description>
           </SC.Row>
         </SC.Column>

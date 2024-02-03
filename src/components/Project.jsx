@@ -84,8 +84,7 @@ function Project() {
             </SC.FullRow>
             <SC.Row>
               <SC.Description>
-                팀회식 때 갔던 음식점에 대해서 평가를 남기고 사용한 비용 등을
-                기록하는 사이트 입니다.
+                음식점에 대한 평가 및 비용을 기록하는 사이트 입니다.
               </SC.Description>
             </SC.Row>
             <SC.Row>

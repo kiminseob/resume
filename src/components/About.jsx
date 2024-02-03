@@ -43,7 +43,7 @@ function About() {
         <SC.Wrapper>
           <SC.Row>
             <SC.Row style={{ alignItems: 'center' }}>
-              개발 언어 : Typescript, ES6, HTML, CSS
+              언어 : Typescript, HTML, CSS
             </SC.Row>
           </SC.Row>
         </SC.Wrapper>
