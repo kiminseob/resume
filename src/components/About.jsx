@@ -7,12 +7,17 @@ function About() {
       <S.Header>
         <S.H1>
           안녕하세요. <br />
-          성장하는 개발자 김인섭 입니다.
+          끈기있는 개발자 김인섭 입니다.
         </S.H1>
         <S.MyInfo>
-          <S.Wrapper>
-            <S.Stack>이력서 업데이트. 24.02.03 </S.Stack>
-          </S.Wrapper>
+          <div>
+            <S.Stack>
+              <a href="https://profile.inseop.pe.kr" target="_blank">
+                <strong>Profile</strong>
+              </a>{' '}
+              업데이트. 24.02.04
+            </S.Stack>
+          </div>
           <div>
             <strong>Github: </strong>
             <a href="https://github.com/kiminseob" target="_blank">

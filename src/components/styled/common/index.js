@@ -14,12 +14,12 @@ SC.MyInfo = styled.div`
 SC.Aside = styled.aside`
   white-space: pre-line;
   margin: 0.8rem 0;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 `;
 
 SC.H1 = styled.h1`
   margin: 0 0 1rem 0;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 `;
 
 SC.Bold = styled.p`
