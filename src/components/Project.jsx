@@ -98,7 +98,7 @@ function Project() {
           </SC.Column>
           <SC.Column>
             <SC.FullRow>
-              <SC.RowHeader>PT샵 웹 페이지</SC.RowHeader>
+              <SC.RowHeader>1:1 PT샵 사이트</SC.RowHeader>
               <SC.Row>
                 <a href="https://forestgym.inseop.pe.kr" target="_blank">
                   <SC.Icon src="icon/expand.png" />
@@ -107,7 +107,7 @@ function Project() {
             </SC.FullRow>
             <SC.Row>
               <SC.Description>
-                친구가 운영하는 1:1 pt샵의 웹 사이트를 만들어주기 위해 개발하고
+                친구가 운영하는 1:1 PT샵의 웹 사이트를 만들어주기 위해 개발하고
                 있습니다.
               </SC.Description>
             </SC.Row>

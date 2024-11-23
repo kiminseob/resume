@@ -26,8 +26,8 @@ function Career2() {
                 <SC.List>
                   <SC.Wrapper>프로젝트 소개</SC.Wrapper>
                   <SC.MarkerList>
-                    자사 미들웨어 제품인 JEUS, WebtoB, ProObject, AnyLink 등을
-                    통합하여 한 화면에서 제공하는 Admin 플랫폼 입니다.
+                    사내 미들웨어 제품인 JEUS, WebtoB, ProObject, AnyLink 등을
+                    통합 관리하는 Admin 플랫폼입니다.
                   </SC.MarkerList>
                 </SC.List>
               </SC.Wrapper>
@@ -36,7 +36,7 @@ function Career2() {
                 <SC.List>
                   <SC.Wrapper>담당 업무</SC.Wrapper>
                   <SC.MarkerList>
-                    JEUS 설정을 관리하는 Admin 페이지를 담당했습니다.
+                    JEUS Admin 페이지를 담당했습니다.
                   </SC.MarkerList>
                 </SC.List>
               </SC.Wrapper>
@@ -52,36 +52,33 @@ function Career2() {
                 <SC.List>
                   <SC.Wrapper>개발 내용</SC.Wrapper>
                   <SC.MarkerList>
-                    서버, 클러스터, 도메인 설정 등 전반적인 JEUS 설정 관리
-                    페이지 개발
+                    서버, 클러스터, 도메인 등 JEUS 설정 관리 페이지
                   </SC.MarkerList>
-                  <SC.MarkerList>어드민 계정 관리 페이지</SC.MarkerList>
-                  <SC.MarkerList>
-                    애플리케이션 배포 관리 페이지 개발
-                  </SC.MarkerList>
-                  <SC.MarkerList>히스토리 관리 페이지 개발</SC.MarkerList>
+                  <SC.MarkerList>계정 관리 페이지</SC.MarkerList>
+                  <SC.MarkerList>애플리케이션 배포 관리 페이지</SC.MarkerList>
                 </SC.List>
               </SC.Wrapper>
+
               <SC.List>
-                <SC.Wrapper>성과</SC.Wrapper>
+                <SC.Wrapper>프로젝트 기여한 점</SC.Wrapper>
                 <SC.MarkerList>
-                  <a href="#multi-check-tree">멀티 체크 트리 라이브러리</a>를
-                  배포해 권한 관리 로직에 적용, 그와 관련된 페이지 개발 생산성
-                  기여
+                  <a href="#multi-check-tree">react-multi-checkbox-tree</a>{' '}
+                  라이브러리를 배포해 권한 관리(RWX)를 쉽게 다룰 수 있도록
+                  했습니다.
                 </SC.MarkerList>
                 <SC.MarkerList>
-                  gitlab 개발 브랜치와 Jenkins 서버 구축 및 연동, 팀원들이 각자
-                  개발 환경을 세팅하는 비효율적인 기존의 프로세스 개선
+                  미들웨어 서버 구축 및 Jenkins 연동을 통해 개발 서버 환경을
+                  제공했습니다.
                 </SC.MarkerList>
                 <SC.MarkerList>
-                  1000개가 넘는 사내 디자인 시스템 아이콘을 다운받아 react
-                  코드로 import하는 파일을 생성하는 아이콘 번들 스크립트를
-                  작성하여 아이콘 작업 생산성 기여
+                  약 1000개가 넘는 사내 아이콘을 react에서 바로 사용할 수 있도록
+                  아이콘 폴더를 읽어와 react import문 코드를 생성해주는
+                  스크립트를 만들었습니다.
                 </SC.MarkerList>
                 <SC.MarkerList>
                   2022.12{' '}
                   <a
-                    href="https://sw.tta.or.kr/product/prod_gsce_view.jsp?num=7477&pa=b3e4fdbb778cf9770a52cd9ddecb59881c927fbecc786f8674cb6e59275104ac043f63cf10207b98d3aa5c5207798e22https://sw.tta.or.kr/product/prod_gsce_view.jsp?num=7477&pa=b3e4fdbb778cf9770a52cd9ddecb59881c927fbecc786f8674cb6e59275104ac043f63cf10207b98d3aa5c5207798e22"
+                    href="https://cs.tta.or.kr/tta/notification/ttaCertProductListR.do?tnc_lab=&up_tnc_cls_no=&tnc_cls_no=&cert_year=&searchKey=product&searchWord=%EC%A0%9C%EC%9A%B0%EC%8A%A4+21"
                     target="_blank"
                   >
                     GS인증 1등급
@@ -108,9 +105,8 @@ function Career2() {
                 <SC.List>
                   <SC.Wrapper>담당 업무</SC.Wrapper>
                   <SC.MarkerList>
-                    SFM 프로젝트로부터 clone 하여 오픈소스 미들웨어(Apache,
-                    Nginx, Wildfly, Tomcat)에 맞는 구조로 커스터마이징 및 고도화
-                    하는 업무를 담당했습니다.
+                    SFM 프로젝트의 오픈소스 미들웨어 버전입니다. Apache, Nginx,
+                    Wildfly, Tomcat을 관리합니다.
                   </SC.MarkerList>
                 </SC.List>
                 <SC.Wrapper>
@@ -122,21 +118,15 @@ function Career2() {
                 <SC.Wrapper>
                   <SC.List>
                     <SC.Wrapper>개발 내용</SC.Wrapper>
-                    <SC.MarkerList>미들웨어 LifeCycle 관리</SC.MarkerList>
-                    <SC.MarkerList>미들웨어 설정 관리</SC.MarkerList>
+                    <SC.MarkerList>미들웨어 제어/설정 관리</SC.MarkerList>
                   </SC.List>
                 </SC.Wrapper>
                 <SC.List>
-                  <SC.Wrapper>성과</SC.Wrapper>
-                  <SC.MarkerList>
-                    gitlab과 Jenkins 연동을 통한 CI/CD 구축 및 오픈소스(Apache,
-                    Nginx, Wildfly, Tomcat)를 연동하여 별도의 개발 서버 세팅.
-                    팀원들의 번거로운 개발 환경 세팅 및 배포 시간 단축
-                  </SC.MarkerList>
+                  <SC.Wrapper>프로젝트 기여한 점</SC.Wrapper>
                   <SC.MarkerList>
                     2023.02{' '}
                     <a
-                      href="https://sw.tta.or.kr/product/prod_gsce_view.jsp?num=7583&pa=359f396b2a22e52c061d906ad3b8285b992d122e67128b243d66ca56052dc7af043f63cf10207b98d3aa5c5207798e22"
+                      href="https://cs.tta.or.kr/tta/notification/ttaCertProductListR.do?tnc_lab=&up_tnc_cls_no=&tnc_cls_no=&cert_year=&searchKey=product&searchWord=%ED%95%98%EC%9D%B4%ED%8D%BC%ED%94%84%EB%A0%88%EC%9E%84+21"
                       target="_blank"
                     >
                       GS인증 1등급

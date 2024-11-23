@@ -11,7 +11,7 @@ function Others1() {
         </SC.Column>
         <SC.Column>
           <SC.FullRow>
-            <SC.RowHeader>AI 음성 스피커 서비스 개발</SC.RowHeader>
+            <SC.RowHeader>AI 스피커 서비스 개발</SC.RowHeader>
             <SC.Row>
               <a href="https://github.com/kiminseob/nuguAir" target="_blank">
                 <SC.Icon src="icon/github.png" />
@@ -41,9 +41,9 @@ function Others1() {
           </SC.Row>
           <SC.Row>
             <SC.Description>
-              SKT의 AI 스피커 NUGU의 음성 서비스를 개발했습니다. <br />
-              '항공권 음성 검색' 최우수상, '멀티 배팅 게임' 우수상, '셀보이스'
-              우수상을 각각 수상했습니다.
+              AI 스피커 NUGU의 음성 서비스를 개발했습니다. <br />
+              '항공권 검색' 최우수상, '멀티 배팅 게임' 우수상, '셀보이스'
+              우수상을 수상했습니다.
             </SC.Description>
           </SC.Row>
         </SC.Column>
@@ -55,7 +55,7 @@ function Others1() {
         </SC.Column>
         <SC.Column>
           <SC.FullRow>
-            <SC.RowHeader>빅스비 캡슐 챌린지</SC.RowHeader>
+            <SC.RowHeader>AI 빅스비 캡슐 챌린지</SC.RowHeader>
             <SC.Row>
               <a
                 href="https://github.com/revoiceStudio/private_bixby"
@@ -76,8 +76,9 @@ function Others1() {
           </SC.Row>
           <SC.Row>
             <SC.Description>
-              삼성의 음성 AI 빅스비 캡슐 '마이 셀러'를 개발했습니다. 마이 셀러는
-              온라인 판매자들을 위한 상품 및 배송 관리 음성 서비스 입니다.
+              AI 빅스비 캡슐 '마이 셀러'를 개발했습니다.
+              <br />
+              마이 셀러는 온라인 판매자들을 위한 상품 및 배송 관리 서비스로
               입상을 수상했습니다.
             </SC.Description>
           </SC.Row>

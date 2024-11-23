@@ -74,7 +74,7 @@ SC.Column = styled.div`
 `;
 
 SC.Stack = styled.i`
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   letter-spacing: -0.3px;
   color: gray;
 `;

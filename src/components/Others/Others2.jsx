@@ -23,9 +23,9 @@ function Others2() {
           </SC.Row>
           <SC.Row>
             <SC.Description>
-              SKT AI 스피커 NUGU의 play를 만드는 과정에서 직접 정의한 파라미터와
-              Backend proxy API Reference에서 제공하는 규격에 맞게 HTTP
-              Request/Response의 JSON 파싱과 응답을 손쉽게 하도록 도와줍니다.
+              AI 스피커 NUGU의 백엔드 서비스를 위한 라이브러리입니다.
+              <br />
+              NUGU API 규격에 맞춰 HTTP 요청/응답 kit를 제공합니다.
             </SC.Description>
           </SC.Row>
         </SC.Column>
@@ -51,8 +51,7 @@ function Others2() {
           </SC.Row>
           <SC.Row>
             <SC.Description>
-              멀티 체크 박스 트리는 각 트리들이 필요로 하는 여러가지 상태를
-              관리할 수 있도록 도와줍니다.
+              트리의 각 요소가 여러 상태를 관리할 수 있습니다.
             </SC.Description>
           </SC.Row>
         </SC.Column>

@@ -6,17 +6,12 @@ function About() {
     <>
       <S.Header>
         <S.H1>
-          안녕하세요. <br />
-          끈기있는 개발자 김인섭 입니다.
+          안녕하세요. <br />웹 프론트엔드 개발자
+          <br /> 김인섭입니다.
         </S.H1>
         <S.MyInfo>
           <div>
-            <S.Stack>
-              <a href="https://profile.inseop.pe.kr" target="_blank">
-                <strong>Profile</strong>
-              </a>{' '}
-              업데이트. 24.02.04
-            </S.Stack>
+            <S.Stack>업데이트. 24.11.24</S.Stack>
           </div>
           <div>
             <strong>Github: </strong>
@@ -31,15 +26,13 @@ function About() {
         </S.MyInfo>
       </S.Header>
       <S.Aside>
-        4년차 웹 프론트엔드 개발자 김인섭입니다. {'\n'}
-        일상에 가치를 제공하는 서비스를 만드는 것에 큰 보람을 느낍니다. {'\n'}
-        팀원들과 의견을 나누고 공유하며 같이 성장하는 것을 지향합니다. {'\n'}
+        일상에 가치를 제공하는 서비스를 만드는 것에 큰 보람을 느낍니다.
       </S.Aside>
       <S.Divider />
       <S.Column>
-        <S.Bold>총 경력 (3년 4개월)</S.Bold>
+        <S.Bold>프론트엔드 총 경력 (3년 4개월)</S.Bold>
         <S.Description>
-          티맥스소프트 / 프론트엔드 개발자 (2021.08.01 ~ 재직중) - 2년 6개월
+          티맥스소프트 / 프론트엔드 개발자 (2021.08.01 ~ 재직중) - 3년 4개월
         </S.Description>
         <S.Description>
           리보이스 / 백엔드 개발자 (2019.09 ~ 2020.06) - 10개월
@@ -47,7 +40,7 @@ function About() {
       </S.Column>
       <S.Wrapper />
       <S.Column>
-        <S.Bold>주요 기술</S.Bold>
+        <S.Bold>사용 기술 스택</S.Bold>
         <S.Wrapper>
           <S.Row>
             <S.Row style={{ alignItems: 'center' }}>
@@ -59,9 +52,15 @@ function About() {
           <S.Row>
             <S.Row style={{ alignItems: 'center' }}>
               <S.Description>
-                라이브러리 : React.js, Mobx, Recoil, React Query, Styled,
-                Material
+                라이브러리 : React.js, React Query, Styled, Material
               </S.Description>
+            </S.Row>
+          </S.Row>
+        </S.Wrapper>
+        <S.Wrapper>
+          <S.Row>
+            <S.Row style={{ alignItems: 'center' }}>
+              <S.Description>테스트 : Storybook, Cypress</S.Description>
             </S.Row>
           </S.Row>
         </S.Wrapper>
