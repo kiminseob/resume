@@ -34,7 +34,8 @@ function App() {
           <Container>
             <A4>
               <About />
-              <Career1 /> <Career2 /> <Career3 /> <Project />
+              <Career1 /> <Career2 /> <Career3 />
+              <Project />
               <Others1 /> <Others2 /> <Others3 />
             </A4>
           </Container>

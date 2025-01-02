@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --env development",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "cp dist/index.html dist/404.html && gh-pages -d dist"
+    "deploy": "cp dist/index.html dist/bundle.js && gh-pages -d dist"
   },
   "homepage": "https://kiminseob.github.io/portfolio",
   "repository": {
