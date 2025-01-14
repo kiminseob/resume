@@ -7,7 +7,7 @@ function Others1() {
       {/* <SC.Subject>기타</SC.Subject> */}
       <SC.Row>
         <SC.Column>
-          <SC.Company>수상</SC.Company>
+          <SC.Company>대외 활동</SC.Company>
         </SC.Column>
         <SC.Column>
           <SC.FullRow>

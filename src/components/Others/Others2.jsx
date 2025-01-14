@@ -55,28 +55,6 @@ function Others2() {
               라이브러리입니다.
             </SC.Description>
           </SC.Row>
-          <SC.Row>
-            <SC.MarkerList>
-              라이브러리 개발 목적
-              <SC.DotList>
-                복잡한 권한 구조에서 다중 선택 및 계층적 데이터 처리를
-                효율적으로 관리하기 위함.
-              </SC.DotList>
-            </SC.MarkerList>
-          </SC.Row>
-          <SC.Row>
-            <SC.MarkerList>
-              기능
-              <SC.DotList>
-                체크박스를 통해 계층적 데이터의 읽기(R), 쓰기(W), 실행(X) 권한을
-                시각적이고 직관적으로 관리할 수 있도록 구현
-              </SC.DotList>
-              <SC.DotList>
-                부모-자식 관계에서 상위 항목 선택 시 하위 항목이 자동
-                선택/해제되는 로직 구현
-              </SC.DotList>
-            </SC.MarkerList>
-          </SC.Row>
         </SC.Column>
       </SC.Row>
     </section>

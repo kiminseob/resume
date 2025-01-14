@@ -11,7 +11,7 @@ function About() {
         </SC.H1>
         <SC.MyInfo>
           <div>
-            <SC.Stack>업데이트. 25.01.10</SC.Stack>
+            <SC.Stack>업데이트. 25.01.14</SC.Stack>
           </div>
           <div>
             <strong>Github: </strong>

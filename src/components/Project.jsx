@@ -69,7 +69,7 @@ function Project() {
           </SC.Column>
         </SC.Row> */}
         {/* <SC.Aside>사이드 프로젝트</SC.Aside> */}
-        <SC.Row>
+        {/* <SC.Row>
           <SC.Column>
             <SC.Company>굿푸리</SC.Company>
           </SC.Column>
@@ -91,7 +91,7 @@ function Project() {
               <SC.Stack>React, typescript, mobx</SC.Stack>
             </SC.Row>
           </SC.Column>
-        </SC.Row>
+        </SC.Row> */}
         <SC.Row>
           <SC.Column>
             <SC.Company>포레스트짐</SC.Company>
