@@ -1,7 +1,7 @@
 import React from 'react';
 import SC from '../styled/common';
 
-function Others2() {
+function Library() {
   return (
     <section>
       <SC.Row>
@@ -9,9 +9,10 @@ function Others2() {
           <SC.Company>라이브러리</SC.Company>
         </SC.Column>
         <SC.Column>
-          <SC.RowDivider />
           <SC.FullRow>
-            <SC.RowHeader>nugu-kit</SC.RowHeader>
+            <SC.RowHeader>
+              nugu-kit <SC.Stack>(backend) </SC.Stack>
+            </SC.RowHeader>
             <SC.Row>
               <a href="https://www.npmjs.com/package/nugu-kit" target="_blank">
                 <SC.Icon src="icon/npm.svg" />
@@ -36,7 +37,9 @@ function Others2() {
         </SC.Column>
         <SC.Column id="multi-check-tree">
           <SC.FullRow>
-            <SC.RowHeader>react-multi-checkbox-tree</SC.RowHeader>
+            <SC.RowHeader>
+              react-multi-checkbox-tree <SC.Stack>(frontend) </SC.Stack>
+            </SC.RowHeader>
             <SC.Row>
               <a
                 href="https://www.npmjs.com/package/react-multi-checkbox-tree"
@@ -57,8 +60,9 @@ function Others2() {
           </SC.Row>
         </SC.Column>
       </SC.Row>
+      <SC.Wrapper />
     </section>
   );
 }
 
-export default Others2;
+export default Library;

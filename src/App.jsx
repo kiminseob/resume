@@ -4,12 +4,11 @@ import {
   About,
   Career1,
   Career2,
-  Career3,
-  Project,
-  Others1,
-  Others2,
-  Others3,
+  Activity,
+  Library,
+  Contribution,
 } from 'components';
+import SC from './components/styled/common';
 import { Routes, Route } from 'react-router-dom';
 
 const Container = styled.div`
@@ -34,9 +33,16 @@ function App() {
           <Container>
             <A4>
               <About />
-              <Career1 /> <Career2 /> <Career3 />
-              <Project />
-              <Others1 /> <Others2 /> <Others3 />
+              <Career1 />
+              <Career2 />
+              <Contribution />
+              {/* <Career3 /> */}
+              {/* <Project /> */}
+              <SC.Divider />
+              <Library />
+              <SC.Divider />
+              <Activity />
+              {/* <Others3 /> */}
             </A4>
           </Container>
         }

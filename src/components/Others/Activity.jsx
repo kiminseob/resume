@@ -1,19 +1,40 @@
 import React from 'react';
 import SC from '../styled/common';
 
-function Others1() {
+function Activity() {
   return (
     <section>
       {/* <SC.Subject>기타</SC.Subject> */}
       <SC.Row>
         <SC.Column>
-          <SC.Company>대외 활동</SC.Company>
+          <SC.Company>활동</SC.Company>
+        </SC.Column>
+        <SC.Column>
+          <SC.FullRow>
+            <SC.RowHeader>KT 모바일 퓨처리스트</SC.RowHeader>
+          </SC.FullRow>
+          <SC.Row>
+            <SC.Description>
+              KT의 대학생 대표 ICT·마케팅 프로그램으로 5G·AI 기반 서비스 체험 및
+              아이디어 기획, 온·오프라인 홍보 콘텐츠 제작 활동에 참여했습니다.
+            </SC.Description>
+          </SC.Row>
+        </SC.Column>
+      </SC.Row>
+      <SC.Wrapper />
+      <SC.Row>
+        <SC.Column>
+          <SC.Company></SC.Company>
         </SC.Column>
         <SC.Column>
           <SC.FullRow>
             <SC.RowHeader>AI 스피커 서비스 개발</SC.RowHeader>
             <SC.Row>
-              <a href="https://github.com/kiminseob/nuguAir" target="_blank">
+              <a
+                title="nuguAir"
+                href="https://github.com/kiminseob/nuguAir"
+                target="_blank"
+              >
                 <SC.Icon src="icon/github.png" />
               </a>
               <a
@@ -120,9 +141,8 @@ function Others1() {
           </SC.Row>
         </SC.Column>
       </SC.Row>
-      <SC.Wrapper />
     </section>
   );
 }
 
-export default Others1;
+export default Activity;
