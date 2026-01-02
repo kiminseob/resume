@@ -38,12 +38,24 @@ function Career2() {
                   </SC.Wrapper>
                   <SC.Wrapper>
                     <SC.List>
+                      <SC.Wrapper>팀 구성</SC.Wrapper>
+                      <SC.MarkerList>
+                        프론트엔드 3명, 백엔드 2명, 디자인 1명, 기획 2명
+                      </SC.MarkerList>
+                    </SC.List>
+                  </SC.Wrapper>
+                  <SC.Wrapper>
+                    <SC.List>
                       <SC.Wrapper>담당 업무</SC.Wrapper>
                       <SC.MarkerList>
-                        프로젝트/서비스 관리 페이지 개발
+                        Next.js 기반의 로그인(Auth), 프로젝트 및 서비스 관리 페이지 개발
                       </SC.MarkerList>
-                      <SC.MarkerList>회원 정보 관리 페이지 개발</SC.MarkerList>
-                      <SC.MarkerList>결제/과금 관리 화면 구현</SC.MarkerList>
+                      <SC.MarkerList>
+                        재사용 가능한 폼 컴포넌트 라이브러리 구축 및 React Hook Form 도입을 통한 폼 핸들링 최적화
+                      </SC.MarkerList>
+                      <SC.MarkerList>
+                        결제 및 과금 관리 페이지 구현
+                      </SC.MarkerList>
                     </SC.List>
                   </SC.Wrapper>
                   <SC.Wrapper>

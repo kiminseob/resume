@@ -29,25 +29,21 @@ function Contribution() {
                         </SC.MarkerList>
                       </SC.DotList>
                       <SC.DotList>
-                        <strong>개선 방법</strong>
+                        <strong>문제 해결 과정</strong>
                         <SC.MarkerList>
-                          폼 필드의 데이터 타입과 유효성 조건을 명시적으로
-                          정의한 Zod 스키마를 생성했습니다.
+                          기존의 명령형(Imperative) 유효성 검사 방식에서 선언적(Declarative) 방식으로 전환하기 위해 Zod 스키마를 설계했습니다.
                         </SC.MarkerList>
                         <SC.MarkerList>
-                          동일한 검증 로직은 모듈화하여 재사용 가능하도록
-                          공통화했습니다.
+                          복잡한 중첩 객체 및 배열 형태의 데이터 구조에 대응하는 커스텀 검증 로직을 작성하고, 이를 React Hook Form의 resolver와 연동하여 런타임 안정성을 확보했습니다.
                         </SC.MarkerList>
                       </SC.DotList>
                       <SC.DotList>
-                        <strong>결과</strong>
+                        <strong>성과</strong>
                         <SC.MarkerList>
-                          분산되어 있던 유효성 검사 로직을 스키마 기반으로
-                          통합하여 코드 중복을 줄이고 가독성을 향상시켰습니다.
+                          페이지별로 분산되어 있던 유효성 검사 로직을 중앙 스키마로 관리함으로써 코드 중복을 획기적으로 제거했습니다.
                         </SC.MarkerList>
                         <SC.MarkerList>
-                          유효성 조건 변경 시 단일 스키마만 수정하면 되어
-                          유지보수 작업이 간소화되었습니다.
+                          TypeScript와 연동하여 폼 데이터에 대한 강력한 타입 추론을 제공, 개발 중 발생할 수 있는 런타임 에러를 사전에 방지했습니다.
                         </SC.MarkerList>
                       </SC.DotList>
                     </SC.List>
@@ -57,38 +53,22 @@ function Contribution() {
                         i18n 도입을 통한 다국어 지원 및 상수 관리 체계화
                       </strong>
                       <SC.DotList>
-                        <strong>배경</strong>
+                        <strong>문제 해결 과정</strong>
                         <SC.MarkerList>
-                          글로벌 시장 확장을 고려하여 다국어 지원이
-                          필요했습니다. 이를 위해 i18n 라이브러리를 도입하여
-                          다국어 기반을 구축하고 상수 관리 체계를 개선했습니다.
+                          글로벌 확장을 위해 react-i18next를 기반으로 한 다국어 지원 아키텍처를 설계했습니다.
+                        </SC.MarkerList>
+                        <SC.MarkerList>
+                          단순 텍스트 번역을 넘어 날짜, 숫자 포맷팅 등 국가별 로케일 설정을 자동화하고, 번역 파일 로드 시의 성능 최적화를 위해 Lazy Loading을 적용했습니다.
                         </SC.MarkerList>
                       </SC.DotList>
 
                       <SC.DotList>
-                        <strong>개선 방법</strong>
+                        <strong>성과</strong>
                         <SC.MarkerList>
-                          언어별 번역 파일을 중앙에서 관리하도록 구조화했습니다.
+                          한국어/영어 등 다국어 대응 시간을 획기적으로 단축했으며, 비개발군(기획/번역팀)과의 협업 효율을 위해 JSON 기반의 번역 관리 프로세스를 정립했습니다.
                         </SC.MarkerList>
                         <SC.MarkerList>
-                          텍스트를 상수로 분리하여 코드 내 하드코딩된 문자열을
-                          제거하고 번역 파일에서 동적으로 로드되도록
-                          개선했습니다.
-                        </SC.MarkerList>
-                      </SC.DotList>
-                      <SC.DotList>
-                        <strong>결과</strong>
-                        <SC.MarkerList>
-                          글로벌 사용자에게 일관된 경험을 제공할 수 있는 다국어
-                          지원 체계를 구축했습니다.
-                        </SC.MarkerList>
-                        <SC.MarkerList>
-                          모든 상수를 중앙에서 관리함으로써 개발 편의성과
-                          유지보수성을 향상시켰습니다.
-                        </SC.MarkerList>
-                        <SC.MarkerList>
-                          체계적인 상수 관리로 문자열 중복 문제를 해소할 수
-                          있었습니다.
+                          코드 내 하드코딩된 문자열을 99% 제거하여 서비스 전체의 일관성을 확보했습니다.
                         </SC.MarkerList>
                       </SC.DotList>
                     </SC.List>
@@ -98,48 +78,71 @@ function Contribution() {
                         TDS(Tmaxsoft Design System) 도입을 위한 모노레포 이전
                       </strong>
                       <SC.DotList>
-                        <strong>배경</strong>
+                        <strong>문제 해결 과정</strong>
                         <SC.MarkerList>
-                          사내 제품들이 각기 다른 UI/UX 스타일을 사용하면서
-                          사용자 경험의 일관성이 부족했고 새로운 기능 추가나
-                          디자인 변경 시 비효율적인 유지보수가 발생했습니다.
-                          마침 다른 부서에서 모노레포 환경 기반으로{' '}
-                          <strong>TDS</strong>를 구축하고 있었지만 도입을
-                          위해서는 모노레포 전환과 기존 컴포넌트 변경이 필요해
-                          부담스러운 분위기가 있었습니다. 그럼에도 사내 제품의
-                          일관성과 유지보수성을 강화하기 위해 모노레포 기반의{' '}
-                          <strong>TDS</strong> 활용을 적극 추진했습니다.
-                        </SC.MarkerList>
-                      </SC.DotList>
-                      <SC.DotList>
-                        <strong>개선 방법</strong>
-                        <SC.MarkerList>
-                          저장소를 모노레포 구조로 이전했습니다.
+                          제품군 간 디자인 파편화 문제를 해결하기 위해 pnpm workspaces를 활용한 모노레포 환경으로의 마이그레이션을 주도했습니다.
                         </SC.MarkerList>
                         <SC.MarkerList>
-                          기존 컴포넌트를 점진적으로 교체하여 개발 중단 없이
-                          통합 작업을 진행했습니다.
+                          디자인 시스템(TDS) 도입 시 기존 제품의 UI가 깨지지 않도록 점진적 마이그레이션 전략을 수립하여 통합을 완료했습니다.
                         </SC.MarkerList>
                         <SC.MarkerList>
-                          프로젝트 요구사항에 맞게 TDS 컴포넌트를 확장하고
-                          커스터마이징했습니다.
+                          TDS의 유연성을 높이기 위해 컴포넌트 조합(Composition) 패턴을 적극 활용하여 다양한 요구사항에 대응했습니다.
                         </SC.MarkerList>
                       </SC.DotList>
                       <SC.DotList>
                         <strong>성과</strong>
                         <SC.MarkerList>
-                          사용자에게 일관된 UI/UX를 제공하며 브랜드 아이덴티티를
-                          강화할 수 있었습니다.
+                          사내 모든 제품에 걸쳐 일관된 브랜드 아이덴티티를 확립하고, 신규 페이지 개발 시 UI 구현 시간을 대폭 단축했습니다.
                         </SC.MarkerList>
                         <SC.MarkerList>
-                          통합된 컴포넌트 사용으로 코드 중복을 제거하고 변경 시
-                          한 번의 수정으로 모든 프로젝트에 반영할 수 있게
-                          되었습니다.
+                          공통 라이브러리화를 통해 프로젝트 간 코드 공유가 용이해졌으며, 디자인 변경 사항을 전사 제품에 동시 반영할 수 있는 체계를 구축했습니다.
                         </SC.MarkerList>
+                      </SC.DotList>
+                    </SC.List>
+                    <SC.List>
+                      <strong>
+                        Next.js 서버-클라이언트 렌더링 불일치(Hydration Error) 해결
+                      </strong>
+                      <SC.DotList>
+                        <strong>문제 상황</strong>
                         <SC.MarkerList>
-                          디자인 시스템 통합 덕분에 팀 내 협업과 개발 속도가
-                          향상되어 새로운 기능 개발에 더 많은 리소스를 집중할 수
-                          있었습니다.
+                          프로젝트 초기, 브라우저 스토리지나 실시간 데이터를 참조하는 컴포넌트에서 서버와 클라이언트의 렌더링 결과가 달라 발생하는 Hydration Error를 다수 경험했습니다.
+                        </SC.MarkerList>
+                      </SC.DotList>
+                      <SC.DotList>
+                        <strong>해결 방법</strong>
+                        <SC.MarkerList>
+                          useEffect를 활용해 마운트 이후에만 브라우저 전용 로직이 실행되도록 제어하고, Dynamic Import와 No-SSR 패턴을 도입하여 렌더링 안정성을 확보했습니다.
+                        </SC.MarkerList>
+                      </SC.DotList>
+                      <SC.DotList>
+                        <strong>성과</strong>
+                        <SC.MarkerList>
+                          사용자 경험을 저해하는 화면 깜빡임과 런타임 에러를 완전히 제거했으며, 안정적인 SEO 대응이 가능한 렌더링 아키텍처를 수립했습니다.
+                        </SC.MarkerList>
+                      </SC.DotList>
+                    </SC.List>
+
+                    <SC.List>
+                      <strong>
+                        pnpm 워크스페이스 기반 의존성 충돌 및 빌드 최적화
+                      </strong>
+                      <SC.DotList>
+                        <strong>문제 상황</strong>
+                        <SC.MarkerList>
+                          모노레포 환경에서 여러 하위 프로젝트 간 공통 라이브러리 버전이 엉키면서 빌드가 실패하거나, 특정 수정사항이 반영되지 않는 이슈가 발생했습니다.
+                        </SC.MarkerList>
+                      </SC.DotList>
+                      <SC.DotList>
+                        <strong>해결 방법</strong>
+                        <SC.MarkerList>
+                          pnpm의 엄격한 의존성 관리 방식을 활용하여 유령 의존성(Ghost Dependency) 문제를 해결하고, pnpm-workspace.yaml 및 peerDependencies 체계를 정립했습니다.
+                        </SC.MarkerList>
+                      </SC.DotList>
+                      <SC.DotList>
+                        <strong>성과</strong>
+                        <SC.MarkerList>
+                          의존성 충돌로 인한 빌드 오류를 제로화했으며, 중복된 패키지 설치를 줄여 빌드 속도 향상과 저장소 용량 최적화를 동시에 달성했습니다.
                         </SC.MarkerList>
                       </SC.DotList>
                     </SC.List>
