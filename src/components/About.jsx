@@ -24,6 +24,12 @@ function About() {
             <strong>Email </strong>
             <a href="mailto:kis6473@naver.com">kis6473@naver.com</a>
           </div>
+          <div>
+            <strong>Portfolio </strong>
+            <a href="https://profile.inseop.pe.kr/" target="_blank">
+              profile.inseop.pe.kr
+            </a>
+          </div>
         </SC.MyInfo>
       </SC.Header>
       <SC.Aside>
