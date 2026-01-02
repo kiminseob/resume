@@ -6,7 +6,7 @@ function Career1() {
   return (
     <section>
       <SC.Subject>경력</SC.Subject>
-      <SC.Column style={{ gap: 20 }}>
+      <SC.Column style={{ gap: 40, marginBottom: 40, padding: '1rem 0' }}>
         <Description
           company="티맥스소프트"
           role="웹 프론트엔드 개발자"
@@ -134,10 +134,19 @@ const Description = (props) => {
         width,
       }}
     >
-      <SC.Bold style={{ fontSize: 13, position: 'absolute', top: -24 }}>
+      <SC.Bold
+        style={{
+          fontSize: 11,
+          position: 'absolute',
+          top: -24,
+          color: '#888',
+          textTransform: 'uppercase',
+          letterSpacing: '0.05em',
+        }}
+      >
         {label}
       </SC.Bold>
-      {description}
+      <div style={{ fontWeight: 500, color: '#111' }}>{description}</div>
     </SC.Column>
   );
 
@@ -146,12 +155,12 @@ const Description = (props) => {
       style={{
         display: 'flex',
         alignItems: 'center',
-        gap: 50,
+        gap: 60,
       }}
     >
-      <Text label="회사" description={company} width="120px" />
-      <Text label="직무" description={role} width="160px" />
-      <Text label="근무 기간" description={term} width="140px" />
+      <Text label="회사" description={company} width="140px" />
+      <Text label="직무" description={role} width="180px" />
+      <Text label="근무 기간" description={term} width="160px" />
       <Text label="" description={totalCareerDate} />
     </SC.Description>
   );

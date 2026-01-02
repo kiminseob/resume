@@ -19,10 +19,20 @@ const Container = styled.div`
 `;
 
 const A4 = styled.div`
-  width: 700px;
-  padding: 3.1rem;
-  /* border: 1px solid rgb(229, 229, 229); */
-  font-size: 0.9rem;
+  width: 800px;
+  background-color: #ffffff;
+  padding: 4rem;
+  margin: 3rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  font-size: 0.95rem;
+
+  @media print {
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
+    box-shadow: none;
+  }
 `;
 
 function App() {

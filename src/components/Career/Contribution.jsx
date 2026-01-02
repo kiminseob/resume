@@ -16,9 +16,9 @@ function Contribution() {
                 <ul>
                   <SC.Wrapper>
                     <SC.List>
-                      <SC.Wrapper>
+                      <strong>
                         Zod 도입을 통한 폼 유효성 검사 개선
-                      </SC.Wrapper>
+                      </strong>
                       <SC.DotList>
                         <strong>배경</strong>
                         <SC.MarkerList>
