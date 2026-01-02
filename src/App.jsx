@@ -7,6 +7,7 @@ import {
   Activity,
   Library,
   Contribution,
+  Project,
 } from 'components';
 import SC from './components/styled/common';
 import { Routes, Route } from 'react-router-dom';
@@ -37,7 +38,7 @@ function App() {
               <Career2 />
               <Contribution />
               {/* <Career3 /> */}
-              {/* <Project /> */}
+              <Project />
               <SC.Divider />
               <Library />
               <SC.Divider />

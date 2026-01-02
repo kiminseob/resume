@@ -7,112 +7,28 @@ function Project() {
       <SC.Divider />
       <section>
         <SC.Subject>개인 프로젝트</SC.Subject>
-        {/* <SC.Aside>연습</SC.Aside>
         <SC.Row>
           <SC.Column>
-            <SC.Company>To-Do List</SC.Company>
+            <SC.Company>Support Cone</SC.Company>
           </SC.Column>
           <SC.Column>
             <SC.FullRow>
-              <SC.RowHeader>할일 목록 작성 페이지</SC.RowHeader>
+              <SC.RowHeader>창작자를 위한 후원 플랫폼</SC.RowHeader>
               <SC.Row>
-                <a
-                  href="https://github.com/kiminseob/react-todo-list-step1/tree/inseop-mobx"
-                  target="_blank"
-                >
-                  <SC.Icon src="icon/github.png" />
-                </a>
-                <a
-                  href="https://kiminseob.github.io/react-todo-list-step1/"
-                  target="_blank"
-                >
-                  <SC.Icon src="icon/expand.png" />
-                </a>
-              </SC.Row>
-            </SC.FullRow>
-            <SC.Row>
-              <SC.Stack>React, javascript, mobx</SC.Stack>
-            </SC.Row>
-          </SC.Column>
-        </SC.Row>
-        <SC.Row>
-          <SC.Column>
-            <SC.Company>Movie List</SC.Company>
-          </SC.Column>
-          <SC.Column>
-            <SC.FullRow>
-              <SC.RowHeader>영화 목록 페이지</SC.RowHeader>
-              <SC.Row>
-                <a
-                  href="https://github.com/kiminseob/react_movie_app"
-                  target="_blank"
-                >
-                  <SC.Icon src="icon/github.png" />
-                </a>
-                <a
-                  href="https://kiminseob.github.io/movieql-client"
-                  target="_blank"
-                >
-                  <SC.Icon src="icon/expand.png" />
-                </a>
-                <a
-                  href="https://kiminseob.github.io/react_movie_app"
-                  target="_blank"
-                >
-                  <SC.Icon src="icon/expand.png" />
-                </a>
-              </SC.Row>
-            </SC.FullRow>
-            <SC.Row>
-              <SC.Stack>React, javascript, GraphQL, Apollo React</SC.Stack>
-            </SC.Row>
-          </SC.Column>
-        </SC.Row> */}
-        {/* <SC.Aside>사이드 프로젝트</SC.Aside> */}
-        {/* <SC.Row>
-          <SC.Column>
-            <SC.Company>굿푸리</SC.Company>
-          </SC.Column>
-          <SC.Column>
-            <SC.FullRow>
-              <SC.RowHeader>회사 근처 맛집 등록 사이트</SC.RowHeader>
-              <SC.Row>
-                <a href="https://goodfoodlist.inseop.pe.kr" target="_blank">
+                <a href="https://support-cone.vercel.app" target="_blank">
                   <SC.Icon src="icon/expand.png" />
                 </a>
               </SC.Row>
             </SC.FullRow>
             <SC.Row>
               <SC.Description>
-                음식점에 대한 평가 및 비용을 기록하는 사이트 입니다.
+                창작자가 팬들로부터 간편하게 후원을 받고 소통할 수 있는
+                플랫폼입니다. 카카오페이를 연동하여 간편 결제를 지원하며,
+                창작자별 맞춤형 페이지를 제공합니다.
               </SC.Description>
             </SC.Row>
             <SC.Row>
-              <SC.Stack>React, typescript, mobx</SC.Stack>
-            </SC.Row>
-          </SC.Column>
-        </SC.Row> */}
-        <SC.Row>
-          <SC.Column>
-            <SC.Company>포레스트짐</SC.Company>
-          </SC.Column>
-          <SC.Column>
-            <SC.FullRow>
-              <SC.RowHeader>1:1 PT샵 사이트</SC.RowHeader>
-              <SC.Row>
-                <a href="https://forestgym.inseop.pe.kr" target="_blank">
-                  <SC.Icon src="icon/expand.png" />
-                </a>
-              </SC.Row>
-            </SC.FullRow>
-            <SC.Row>
-              <SC.Description>
-                친구가 운영하는 1:1 PT샵의 웹 사이트를 만들어주기 위해 개발하고
-                있습니다.
-              </SC.Description>
-            </SC.Row>
-            <SC.Row>
-              <SC.Stack>React, typescript, material-ui</SC.Stack>
+              <SC.Stack>Next.js, TypeScript, Tailwind CSS, MongoDB</SC.Stack>
             </SC.Row>
           </SC.Column>
         </SC.Row>
