@@ -7,6 +7,38 @@ SC.Header = styled.header`
   justify-content: space-between;
 `;
 
+
+
+SC.HeaderContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  
+  @media (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+`;
+
+SC.IntroHeader = styled.h1`
+  margin: 0 0 0.8rem 0;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+`;
+
+SC.ProfileImage = styled.img`
+  width: 120px;
+  height: 120px;
+  border-radius: 35%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+`;
+
 SC.MyInfo = styled.div`
   font-size: 0.875rem;
   color: #666;
@@ -70,6 +102,23 @@ SC.RowHeader = styled.h3`
   color: #222;
 `;
 
+
+SC.ProjectSection = styled.div`
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid #eaecef;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+`;
+
+SC.ProjectTitle = styled.h3`
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+`;
+
 SC.Row = styled.div`
   display: flex;
   margin-bottom: 1.5rem;
@@ -131,7 +180,7 @@ SC.RowDivider = styled.div`
 
 SC.List = styled.li`
   font-size: 1rem;
-  list-style-type: '• ';
+  list-style-type: disc;
   font-weight: 600;
   color: #222;
   margin-bottom: 0.3rem;
@@ -139,11 +188,12 @@ SC.List = styled.li`
 
 SC.MarkerList = styled.li`
   font-size: 0.95rem;
-  list-style-type: '✓ ';
-  margin-left: 0.8rem;
+  list-style-type: circle;
+  margin-left: 1.2rem;
   margin-bottom: 0.6rem;
   font-weight: 400;
-  color: #444;
+  color: #333;
+  line-height: 1.5;
 `;
 
 SC.DividerList = styled.li`
@@ -155,8 +205,8 @@ SC.DividerList = styled.li`
 `;
 
 SC.DotList = styled.li`
-  list-style-type: '• ';
-  margin-left: 0.8rem;
+  list-style-type: disc;
+  margin-left: 1.2rem;
   font-weight: 400;
   font-size: 0.95rem;
   color: #444;
